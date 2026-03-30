@@ -1,0 +1,74 @@
+@media (min-width: 1200px) {
+  :root {
+    --sn-width: 12rem;   /* width of sidenote */
+    --sn-gap: 4rem;      /* gap between text and sidenote */
+  }
+
+  /* whole canvas page width */
+  .md-grid {
+    max-width: 69rem;
+  }
+
+  /* reading column width */
+  .md-content__inner {
+    max-width: 40rem; 
+    position: relative;
+    overflow: visible; 
+  }
+
+  .md-main__inner,
+  .md-content {
+    overflow: visible;
+  }
+
+  /* push the sidenote into the outer right margin */
+  .sidenote {
+    float: right;
+    clear: right;
+    width: var(--sn-width);
+    margin: 0.2rem calc(-1 * (var(--sn-width) + var(--sn-gap))) 1rem var(--sn-gap);
+
+    font-size: 0.85em;
+    line-height: 1.35;
+    color: var(--md-default-fg-color--light);
+  }
+
+  .sidenote strong { color: var(--md-default-fg-color); }
+
+  .sidenote-ref {
+    vertical-align: super;
+    font-size: 0.75em;
+    font-weight: 1000;
+    line-height: 1;
+    text-decoration: none;
+    padding-left: 0.1em;
+    color: var( --md-accent-fg-color);
+  }
+}
+
+html[data-md-color-scheme="slate"] a.sidenote-ref,
+html[data-md-color-scheme="slate"] a.sidenote-ref:link,
+html[data-md-color-scheme="slate"] a.sidenote-ref:visited,
+html[data-md-color-scheme="slate"] a.sidenote-ref:active,
+html[data-md-color-scheme="slate"] a.sidenote-ref:hover,
+html[data-md-color-scheme="slate"] a.sidenote-ref:focus {
+  color: var(--md-typeset-a-color) !important;
+}
+
+
+
+
+/* mobile*/
+@media (max-width: 1199.98px) {
+  .sidenote {
+    float: none;
+    width: auto;
+    margin: 0.5rem 0 1rem 0;
+    padding: 0.6rem 0.8rem;
+    border-left: 3px solid var(--md-accent-fg-color);
+    background: rgba(0,0,0,0.03);
+    color: var(--md-default-fg-color);
+  }
+}
+
+
