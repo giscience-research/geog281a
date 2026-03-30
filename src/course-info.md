@@ -1,5 +1,7 @@
 # __Course Information__  
 
+__A PDF version of this syllabus is available [here](syllabus.pdf)__.
+
 GEOG 281A is designed to help students design rigorous geographic research by connecting the development and use of core spatial methods to their theoretical foundations in geographic information science (GIScience). Readings and activities in the course are sequenced to help students enhance their spatial thinking skills and prepare to apply those skills to research problems using geographic information systems (GIS). Students explore fundamental topics including ontology and spatial representation, uncertainty, spatial modeling and inference, and validation through open science practices. 
 
 This course teaches students to think critically about the nature of spatial processes, their representation as spatial data, and their analysis using spatial methods. As decisions are made about each of these issues, uncertainty enters into an analysis __(Figure 1)__. That uncertainty can contribute to inferential errors and/or a mismatch between a researchers understanding of reality and relaity itself. The goal of thic course is to prepare students to engage in deep geographic scholarship rather than simply apply GIS tools in specific domains.
@@ -18,7 +20,7 @@ This course teaches students to think critically about the nature of spatial pro
 
 ## __Student Work and Evaluation__
 
-Evaluation will be based on participation (30%), weekly questions (15%), activities (15%), and a literature critique (40%). 
+Evaluation will be based on participation (30%), weekly questions (15%), activities (15%), and a literature critique (40%).
 
 ### Class Participation (30%)
 
@@ -31,7 +33,9 @@ Students are expected to come to class prepared and participate in class discuss
 
 ### Questions (15%)
 
-Conducting research in any field is largely about asking questions. Students are required to submit three questions by __9am Tuesday of each week__ about the readings for that week. These questions will be reviewed prior to class, and selected questions will be integrated into class activities for the week. Questions are the one activity where you are __NOT ALLOWED to use AI__. The point of the questions requirement is to have you engage with the materials and practice your critical and creative thinking skills. If you use AI to generate your questions, you will receive a zero for all your questions for the entire course.
+Conducting research in any field is largely about asking questions. Students are required to submit two questions by __9am Tuesday of each week__ about the readings for that week. These questions will be reviewed prior to class, and selected questions will be integrated into class activities for the week. Questions are the one activity where you are __NOT ALLOWED to use AI__. The point of the questions requirement is to have you engage with the materials and practice your critical and creative thinking skills. If you use AI to generate your questions, you will receive a zero for all your questions for the entire course.
+
+__You will submit your questions through a Google Form each week. Here is link to the [form](https://docs.google.com/forms/d/e/1FAIpQLSfuErQKnnmi2xVmNqSqwjIg8WjvZQ7ztC6dLUx8c9k1qDdg7w/viewform?usp=publish-editor)__.
 
 Questions will be graded using the following criteria.
 
