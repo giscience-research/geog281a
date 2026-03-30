@@ -2,7 +2,7 @@
 
 GEOG 281A is designed to help students design rigorous geographic research by connecting the development and use of core spatial methods to their theoretical foundations in geographic information science (GIScience). Readings and activities in the course are sequenced to help students enhance their spatial thinking skills and prepare to apply those skills to research problems using geographic information systems (GIS). Students explore fundamental topics including ontology and spatial representation, uncertainty, spatial modeling and inference, and validation through open science practices. 
 
-This course teaches students to think critically about the nature of spatial processes, their representation as spatial data, and their analysis using spatial methods. As decisions are made about each of these issues, uncertainty enters into an analysis (Figure 1). That uncertainty can contribute to inferential errors and/or a mismatch between a researchers understanding of reality and relaity itself. The goal of thic course is to prepare students to engage in deep geographic scholarship rather than simply apply GIS tools in specific domains.
+This course teaches students to think critically about the nature of spatial processes, their representation as spatial data, and their analysis using spatial methods. As decisions are made about each of these issues, uncertainty enters into an analysis __(Figure 1)__. That uncertainty can contribute to inferential errors and/or a mismatch between a researchers understanding of reality and relaity itself. The goal of thic course is to prepare students to engage in deep geographic scholarship rather than simply apply GIS tools in specific domains.
 
 ![course](assets/course.svg)
 
@@ -43,7 +43,7 @@ Questions will be graded using the following criteria.
 
 ### Activities (15%)
 
-Students will be asked to participate in activities throughout the course. Activities are intended to serve as practice and checks on student knowledge.You are welcome and encouraged to work with your classmates on these exercises. Most will be done entirely in class. However, you are responsible for submitting your own individual solution report for each activity when requested.
+Students will be asked to participate in activities throughout the course. Activities are intended to serve as practice and checks on student knowledge. You are welcome and encouraged to work with your classmates on these exercises. Most will be done entirely in class. However, you are responsible for submitting your own individual solution report for each activity when requested.
 
 ### Literature Critique (40%)
 

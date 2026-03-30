@@ -20,14 +20,14 @@
 
 # Project information
 site_name: GIScience Research       
-site_url: https://github.com/emilyzhou112/geog281a
+site_url: https://github.com/giscience-research/geog281a
 site_author: Emily Zhou & Peter Kedron
 site_description: >-
   An instruction booklet for the GIScience Research class at UCSB. 
 
 # Repository
-repo_name: emilyzhou112/geog281a
-repo_url: https://github.com/emilyzhou112/geog281a
+repo_name: giscience-research/geog281a
+repo_url: https://github.com/giscience-research/geog281a
 edit_uri: ""
 
 # Copyright
@@ -91,7 +91,7 @@ site_dir: 'docs'
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/emilyzhou112
+      link: https://github.com/giscience-research/geog281a
 
 # Extensions
 markdown_extensions:
@@ -155,4 +155,4 @@ nav:
   - WELCOME: index.md
   - COURSE INFO: course-info.md
   - ACTIVITIES:
-      - Week 1: activities/wk1.md
+      - Week 1: activities/wk1.mdç

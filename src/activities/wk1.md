@@ -58,6 +58,11 @@ __Table 2:__ Elements of Mental Maps from Lynch (1960)
 | __Nodes__ | Strategic focal points that people can enter, typically intersections or convergence points (a town square, a major junction, a transit hub). |
 | __Landmarks__ | External reference points used for orientation but not typically entered; identified by their singularity or contrast with surroundings (a church steeple, a distinctive building, a monument). |
 
+<br>
+<br>
+<br>
+
+
 ## __3. Audit Your Research Question with Spatial Thinking__
 
 __Purpose:__ This activity operationalizes the learning outcome - Identify and articulate the spatial concepts and reasoning strategies used in your work and explain how they connect to spatial thinking frameworks.
