@@ -154,5 +154,9 @@ extra_javascript:
 nav:
   - WELCOME: index.md
   - COURSE INFO: course-info.md
+  - Re-defining GIScience:
+      - What is GIScience?: module1/intro.md
+      - Tool-Science Debate: module1/debate.md
+      - GIScience and Geography: module1/giscience-geography.md
   - ACTIVITIES:
       - Week 1: activities/wk1.md
