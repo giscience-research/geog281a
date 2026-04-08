@@ -39,7 +39,7 @@
   --md-accent-fg-color: #a85f1a;
   --md-default-bg-color: #e2e0e0;
   --md-default-fg-color: #141414;
-  --md-typeset-a-color: #6C8480;
+  --md-typeset-a-color: #334d3d;
 
   --md-code-bg-color: rgba(64, 78, 59, 0.08);
 }
@@ -52,6 +52,9 @@
   --md-default-fg-color: #E6E6E6;
   --md-typeset-a-color: #c6d1bf;
   --md-nav-link-color--hover: #ecb271;  
+}
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: #c6d1bf !important;
 }
 [data-md-color-scheme="slate"] .md-nav__link--active {
   color: var(--md-nav-link-color--active) !important;
