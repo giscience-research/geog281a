@@ -1,6 +1,6 @@
 # __Course Information__  
 
-__A PDF version of this syllabus is available [here](syllabus.pdf)__.
+__A PDF version of this syllabus is available <a href="syllabus.pdf"><span style="font-size: 20px;">here</span></a>__.
 
 GEOG 281A is designed to help students design rigorous geographic research by connecting the development and use of core spatial methods to their theoretical foundations in geographic information science (GIScience). Readings and activities in the course are sequenced to help students enhance their spatial thinking skills and prepare to apply those skills to research problems using geographic information systems (GIS). Students explore fundamental topics including ontology and spatial representation, uncertainty, spatial modeling and inference, and validation through open science practices. 
 
@@ -48,9 +48,11 @@ Students are expected to come to class prepared and participate in class discuss
 
 ### __Questions (15%)__
 
-Conducting research in any field is largely about asking questions. Students are required to submit three questions by __9am Tuesday of each week__ about the readings for that week. These questions will be reviewed prior to class, and selected questions will be integrated into class activities for the week. Questions are the one activity where you are __NOT ALLOWED to use AI__. The point of the questions requirement is to have you engage with the materials and practice your critical and creative thinking skills. If you use AI to generate your questions, you will receive a zero for all your questions for the entire course.
+Conducting research in any field is largely about asking questions. Students are required to submit two questions by __9am Tuesday of each week__ about the readings for that week. These questions will be reviewed prior to class, and selected questions will be integrated into class activities for the week. Questions are the one activity where you are __NOT ALLOWED to use AI__. The point of the questions requirement is to have you engage with the materials and practice your critical and creative thinking skills. If you use AI to generate your questions, you will receive a zero for all your questions for the entire course.
 
-__You will submit your questions through a Google Form each week. Here is link to the [form](https://docs.google.com/forms/d/e/1FAIpQLSfuErQKnnmi2xVmNqSqwjIg8WjvZQ7ztC6dLUx8c9k1qDdg7w/viewform?usp=publish-editor)__.
+__You will submit your questions through a Google Form each week. Here is link to the <a href="https://docs.google.com/forms/d/e/1FAIpQLSfuErQKnnmi2xVmNqSqwjIg8WjvZQ7ztC6dLUx8c9k1qDdg7w/viewform?usp=publish-editor"><span style="font-size: 20px; text-decoration: underline; font-style: italic;">FORM</span></a>__.
+
+
 
 Questions will be graded using the following criteria.
 
