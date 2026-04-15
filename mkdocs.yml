@@ -158,5 +158,9 @@ nav:
       - What is GIScience?: module1/intro.md
       - Tool-Science Debate: module1/debate.md
       - GIScience and Geography: module1/giscience-geography.md
+  - Space, Place, & Process:
+      - Spatial Ontologies - Space: module2/ontologies1.md
+      - Spatial Ontologies - Place: module2/ontologies2.md
+      - Spatial Ontologies - Process: module2/ontologies3.md
   - ACTIVITIES:
       - Week 1: activities/wk1.md
