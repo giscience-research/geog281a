@@ -1,0 +1,1124 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An instruction booklet for the GIScience Research class at UCSB. ">
+      
+      
+        <meta name="author" content="Emily Zhou & Peter Kedron">
+      
+      
+        <link rel="canonical" href="https://github.com/giscience-research/geog281a/module2/database-management/">
+      
+      
+        <link rel="prev" href="../data-models/">
+      
+      
+        <link rel="next" href="../../activities/wk1/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/fav.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Spatial Database Management - GIScience Research</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3:300,300i,400,400i,700,700i%7CSource+Code+Pro:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Source Sans 3";--md-code-font:"Source Code Pro"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../styles/extra.css">
+    
+      <link rel="stylesheet" href="../../styles/tufte-notes.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#spatial-database-and-management" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="GIScience Research" class="md-header__button md-logo" aria-label="GIScience Research" data-md-component="logo">
+      
+  <img src="../../assets/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GIScience Research
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Spatial Database Management
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/giscience-research/geog281a" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    giscience-research/geog281a
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="GIScience Research" class="md-nav__button md-logo" aria-label="GIScience Research" data-md-component="logo">
+      
+  <img src="../../assets/icon.svg" alt="logo">
+
+    </a>
+    GIScience Research
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/giscience-research/geog281a" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    giscience-research/geog281a
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WELCOME
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    COURSE INFO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Re-defining GIScience
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Re-defining GIScience
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module1/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is GIScience?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module1/debate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tool-Science Debate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module1/giscience-geography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GIScience and Geography
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Space, Place, & Process
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Space, Place, & Process
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ontologies1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Ontologies - Space
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ontologies2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Ontologies - Place
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ontologies3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Ontologies - Process
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Spatial Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Nature of Spatial Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Database Management
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Database Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#from-database-to-spatial-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        From Database to Spatial Database
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geodatabase" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GeoDatabase
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problems-of-spatial-database" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problems of Spatial Database
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ACTIVITIES
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ACTIVITIES
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activities/wk1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Week 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="spatial-database-and-management"><strong>Spatial Database and Management</strong></h1>
+<p>In the previous lesson, we examined how geographic phenomena are represented through data models. But representing spatial data is only part of the story. Once spatial data are created, they must be stored, organized, queried, validated, and maintained (often at massive scale). When datasets become large, multi-layered, and interconnected, file-based storage (such as individual shapefiles or rasters) becomes insufficient. This is where spatial databases enter the picture. If data models define how spatial information is structured, spatial databases define how spatial information is managed.</p>
+<p>We have briefly mentioned relational spatial databases as a technical manifestation of relational thinking. Now we examine that more closely to see how they bring together our data models within a system designed for more efficient analysis.</p>
+<h2 id="from-database-to-spatial-database"><strong>From Database to Spatial Database</strong></h2>
+<p>A database management system (DBMS) is a technology designed to organize, retrieve, update, and maintain structured data efficiently. Unlike simple file storage, where files are managed directly by an operating system, databases rely on logical organization. Data are structured into formal schemas that allow efficient querying and controlled modification.</p>
+<p>At the core of any database system is a data model, which serves as the design framework governing how data are structured and manipulated. A complete data model contains three essential components: constructs for describing data structures, operations for manipulating those structures, integrity rules for validating data and ensuring consistency. Among these components, database operations generally follow the CRUD framework: create, retrieve, update, and delete. Integrity is maintained through transaction properties known as ACID: atomicity, consistency, isolation, and durability.
+A spatial database management system (SDBMS) extends a traditional DBMS by incorporating spatial data types and spatial operations. In addition to basic types such as integers or text, an SDBMS supports geometric types such as: point, line string, polygon, and raster. It also supports spatial indexing structures (e.g., R-trees, Quadtrees) that allow efficient spatial querying.</p>
+<p>Crucially, an SDBMS integrates constructs, operations, and rules across three levels of abstraction: conceptual level (how the world is modeled), logical level (how data are structured in tables or collections), and physical level (how data are actually stored and indexed on disk). In this way, spatial databases connect ontology (how we conceptualize space), data models (how we encode it), and implementation (how we store and manipulate it efficiently) well.</p>
+<p>There are multiple logical database models used to implement database systems. Each reflects a different philosophy of data organization and relationship modeling. To name a few:</p>
+<p><strong>Relational databases</strong> organize data into tables (relations), where rows represent entities and columns represent attributes. Relationships between tables are managed through keys and relational algebra operations. This model aligns strongly with structured, schema-driven data environments and remains the dominant model in GIS. Examples include: PostgreSQL with PostGIS (a spatial extension implementing standardized geometry types and spatial functions), MySQL with spatial extensions, and CartoDB (cloud-based system built on PostgreSQL/PostGIS).</p>
+<p><strong>Graph database</strong> store data as nodes, relationships (edges), and properties. This model is inherently relational in structure and is grounded in graph theory. Nodes represent entities, edges represent relationships, and properties describe characteristics. Because relationships are first-class elements, graph databases are especially powerful for modeling relational space and network structures. Here, Neo4j is a prominent example, capable of building 1D and 2D spatial indexes such as B-tree, Quadtree, and Hilbert curve structures within the graph.</p>
+<p><strong>Document-based databases</strong> store data as self-contained documents, often in JSON-like structures. They allow flexible, semi-structured storage without requiring rigid relational schemas. Examples include CouchDB (with GeoCouch spatial plugin) and Elasticsearch (supporting geo-point and geo-shape data types). These systems are often described as “NoSQL” because they do not rely strictly on relational algebra.</p>
+<p><strong>Key-value databases</strong> store data as simple key-value pairs, optimized for rapid retrieval at fine granularity. Redis, with its Geo API, is an example that supports spatial indexing and ranking.</p>
+<p><strong>Object-oriented databases</strong> store entities as objects that include both data and behavior (methods). Rules constrain behavior and interactions among objects. An example here is Smallworld VMDS.</p>
+<p><strong>Open standards-based spatial databases</strong> follow constructs promulgated by organizations such as the Open Geospatial Consortium (OGC). They support standardized geometry types and operations, facilitating interoperability across systems. In this framework, vector geometries are often represented as “simple features,” meaning that geometry is stored without explicit relationship encoding beyond topology.</p>
+<h2 id="geodatabase"><strong>GeoDatabase</strong></h2>
+<p>Although the terms spatial database and geographic database (geodatabase) are often used interchangeably, they are not identical. A spatial database is a general-purpose database enhanced to store, query, and analyze data defined in geometric space. In contrast, a geodatabase is a more specialized type of spatial database designed specifically for geographic data. It stores not only spatial features and attributes but also spatial reference information that ensures correct geographic positioning.</p>
+<p>Geodatabases come in different types, particularly within the Esri ecosystem, where three primary forms are recognized: file geodatabases, enterprise geodatabases, and mobile geodatabases (with the older personal geodatabase type now phased out). A file geodatabase is designed for simplicity and ease of use. It consists of a folder containing multiple files with a .gdb extension and can store both spatial and non-spatial datasets together. File geodatabases are well-suited for thematic or smaller-scale projects, as they are easy to copy and support fast read/write operations for moderate data volumes. However, they are limited in handling complex queries and multi-user editing.</p>
+<p>An enterprise geodatabase, by contrast, is stored within a full database management system (DBMS) such as PostgreSQL, Oracle, or Microsoft SQL Server, and can also be deployed in cloud environments. It is designed to support simultaneous multi-user access and editing, making it suitable for large organizational or enterprise-scale workflows. Storage limits depend on the capabilities of the underlying DBMS, and security and permissions are managed through that system. Enterprise geodatabases do not have a unique file format; instead, they follow the structure of the DBMS in which they are implemented.</p>
+<p>A mobile geodatabase is intended for use by a single user or application at a time and is built on SQLite. It stores datasets within a single .geodatabase file. Permissions and security are handled by the underlying operating system. Mobile geodatabases are optimized for portability and app-based workflows rather than large-scale, concurrent enterprise environments.</p>
+<p>Geodatabases extend traditional database functionality by incorporating spatial querying capabilities. Like non-spatial databases, they allow attribute-based queries using SQL. However, their distinguishing feature is the ability to perform queries based on spatial relationships and location information. Because geodatabases typically rely on the vector data model, they can evaluate topological relationships between features. Examples of spatial relationships include “within,” “contains,” “intersects,” “touches,” and “disjoint.”</p>
+<p>In systems such as PostGIS, spatial queries are written using SQL combined with spatial functions (e.g.ST_Within). These queries return Boolean results, selecting records that meet both attribute and spatial conditions. Spatial joins further extend analytical capabilities by combining datasets based on geographic relationships rather than shared attribute keys. Geodatabases also differentiate between geometry types operating in planar coordinate systems and geography types operating on a spheroidal Earth model. All of these features make geodatabases powerful tools for geospatial analysis.</p>
+<p>Let&rsquo;s work through an example of a spatial query. Suppose we have a geodatabase containing two tables: blockgroups_2020, population_2020 and bus_stops (with stop locations) in a city (for example, Philadelphia). We want to estimate the population within 800 meters of each bus stop. This requires a spatial join between the two tables based on proximity.</p>
+<p>If we were to conduct this analysis in a GIS software, we would use a spatial join tool that identifies all block groups within 800 meters of each bus stop and sums their populations. However, if working within a spatial database, we can write a SQL query that performs this operation directly (<strong>Figure 1</strong>).</p>
+<div class="language-sql highlight"><pre><span></span><code><span class="cm">/*</span>
+<span class="cm">bg_w_pop creates a “block group with population” table by:</span>
+<span class="cm">    - taking population counts from census.population_2020</span>
+<span class="cm">    - joining them to block group geometries in census.blockgroups_2020</span>
+<span class="cm">    - filtering to Philly-only block groups (geoid starts with 42101)</span>
+<span class="cm">*/</span>
+<span class="k">WITH</span>
+<span class="n">bg_w_pop</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">SELECT</span>
+<span class="w">        </span><span class="n">pop</span><span class="p">.</span><span class="n">total</span><span class="p">,</span>
+<span class="w">        </span><span class="n">bg</span><span class="p">.</span><span class="n">geog</span><span class="p">,</span>
+<span class="w">        </span><span class="k">SUBSTRING</span><span class="p">(</span><span class="n">pop</span><span class="p">.</span><span class="n">geoid</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">geoid</span>
+<span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">census</span><span class="p">.</span><span class="n">population_2020</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">pop</span>
+<span class="w">    </span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">census</span><span class="p">.</span><span class="n">blockgroups_2020</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">bg</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">SUBSTRING</span><span class="p">(</span><span class="n">pop</span><span class="p">.</span><span class="n">geoid</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bg</span><span class="p">.</span><span class="n">geoid</span>
+<span class="w">    </span><span class="k">WHERE</span><span class="w"> </span><span class="k">SUBSTRING</span><span class="p">(</span><span class="n">pop</span><span class="p">.</span><span class="n">geoid</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;42101%&#39;</span>
+<span class="p">),</span>
+<span class="cm">/* </span>
+<span class="cm">stop_pop spatially joins bus stops to block groups using ST_DWithin:</span>
+<span class="cm">    - For each stop, find all Philly block groups within 800m</span>
+<span class="cm">    - Sum their populations to get an estimated catchment population</span>
+<span class="cm">*/</span>
+<span class="n">stop_pop</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+
+<span class="w">    </span><span class="k">SELECT</span>
+<span class="w">        </span><span class="n">stops</span><span class="p">.</span><span class="n">stop_id</span><span class="p">,</span>
+<span class="w">        </span><span class="k">SUM</span><span class="p">(</span><span class="n">bg</span><span class="p">.</span><span class="n">total</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">estimated_pop_800m</span>
+<span class="w">    </span><span class="k">FROM</span><span class="w"> </span><span class="n">septa</span><span class="p">.</span><span class="n">bus_stops</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">stops</span>
+<span class="w">    </span><span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">bg_w_pop</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">bg</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">ST_DWITHIN</span><span class="p">(</span><span class="n">stops</span><span class="p">.</span><span class="n">geog</span><span class="p">,</span><span class="w"> </span><span class="n">bg</span><span class="p">.</span><span class="n">geog</span><span class="p">,</span><span class="w"> </span><span class="mi">800</span><span class="p">)</span>
+<span class="w">    </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">stops</span><span class="p">.</span><span class="n">stop_id</span>
+<span class="p">)</span>
+<span class="cm">/*</span>
+<span class="cm">as a finle step, we can join the estimated population back to bus stop attributes </span>
+<span class="cm">and filter to stops with more than 500 people within 800m</span>
+<span class="cm">*/</span>
+<span class="k">SELECT</span>
+<span class="w">    </span><span class="n">stops</span><span class="p">.</span><span class="n">stop_name</span><span class="p">,</span>
+<span class="w">    </span><span class="n">pop</span><span class="p">.</span><span class="n">estimated_pop_800m</span><span class="p">,</span>
+<span class="w">    </span><span class="n">stops</span><span class="p">.</span><span class="n">geog</span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">stop_pop</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">pop</span>
+<span class="k">INNER</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">septa</span><span class="p">.</span><span class="n">bus_stops</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">stops</span><span class="w"> </span><span class="k">USING</span><span class="w"> </span><span class="p">(</span><span class="n">stop_id</span><span class="p">)</span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">pop</span><span class="p">.</span><span class="n">estimated_pop_800m</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">500</span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">pop</span><span class="p">.</span><span class="n">estimated_pop_800m</span><span class="w"> </span><span class="k">ASC</span><span class="p">,</span><span class="w"> </span><span class="n">stops</span><span class="p">.</span><span class="n">geog</span><span class="w"> </span><span class="k">ASC</span>
+<span class="k">LIMIT</span><span class="w"> </span><span class="mi">8</span>
+</code></pre></div>
+<p><a href="../../assets/sql-demo.png" class="zoomable">
+    <img src="../../assets/sql-demo.png">
+</a></p>
+<p><strong>Figure 1</strong>: SQL query to estimate population within 800m of bus stops in Philadelphia. </p>
+<h2 id="problems-of-spatial-database"><strong>Problems of Spatial Database</strong></h2>
+<p>However, there are also several problems associated with managing and working with large spatial databases. These challenges are closely tied to broader issues in big data and the management of big data.</p>
+<p>Geospatial big data pose both computational and conceptual challenges. In modern practice, spatial database management rarely happens on a single desktop machine. Instead, data are stored in distributed environments, transformed through automated pipelines, and ingested into cloud databases. Architecturally, they require high-performance computing environments, distributed systems, and specialized processing frameworks to store and process massive volumes of data efficiently (<strong>Figure 2</strong>). </p>
+<p><img alt="gcloud" src="../../assets/gcloud.png" />
+<strong>Figure 2</strong>: Google Cloud Platform’s BigQuery spatial database pipeline. Source: <a href="https://cloud.google.com/bigquery/docs/spatial-data">https://cloud.google.com/bigquery/docs/spatial-data</a></p>
+<p>Conceptually, however, they inherit fundamental geographic problems such as vague feature boundaries, positional uncertainty, scale effects, and spatial heterogeneity. Many large spatial datasets also lack rigorous sampling methods and clear pathways to replicability, which complicates scientific interpretation and methodological transparency.</p>
+<p>Quality assessment is especially problematic. Traditional spatial datasets often follow established standards such as ISO 19157 for geographic data quality or lidar accuracy specifications. In contrast, many newer big data sources lack standardized quality controls. Spatial accuracy may be inferred from contextual clues rather than precise measurements, and sampling bias is common. As a result, increasing data volume does not necessarily guarantee increasing data reliability.</p>
+<p>Geospatial big data streams, such as those derived from social media platforms or Internet of Things (IoT) sensors, introduce additional challenges because they require continuous ingestion, processing, and near real-time analytics. Although some sensor networks provide stable positional references, social media data often contain ambiguous or incomplete spatial components that must be resolved computationally through geocoding, disambiguation, or probabilistic matching.</p>
+<p>That said, managing geospatial big data requires advanced data modeling, indexing, and structuring approaches. Traditional vector and raster models remain important, supported by spatial indexing techniques such as quadtrees, KD-trees, and R-trees. These indexing strategies enable efficient access to geometric, topological, and thematic attributes. Emerging approaches also incorporate ontologies and semantic structures to improve data integration and interpretation.</p>
+<p>Analytical methods often rely on distributed and high-performance computing environments. Techniques include parametric and non-parametric statistics, spatial clustering, association rule mining, and functional analysis. Increasingly, machine learning and deep learning methods—such as convolutional neural networks—are used to extract patterns and knowledge from large spatial datasets. These methods are applied across remote sensing archives, sensor data streams, social media, and IoT networks.</p>
+<hr />
+<p>Reference:</p>
+<p><em>Spatial Database Management Systems. In UCGIS Body of Knowledge. <a href="https://gistbok-topics.ucgis.org/DM-01-001">https://gistbok-topics.ucgis.org/DM-01-001</a></em></p>
+<p><em>Geodatabases. In UCGIS Body of Knowledge. <a href="https://gistbok-topics.ucgis.org/DM-01-004">https://gistbok-topics.ucgis.org/DM-01-004</a></em></p>
+<p><em>Problems of Large Spatial Databases. In UCGIS Body of Knowledge. <a href="https://gistbok-topics.ucgis.org/DM-01-070">https://gistbok-topics.ucgis.org/DM-01-070</a></em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../data-models/" class="md-footer__link md-footer__link--prev" aria-label="Previous: The Nature of Spatial Data">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                The Nature of Spatial Data
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../activities/wk1/" class="md-footer__link md-footer__link--next" aria-label="Next: Week 1">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Week 1
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Peter Kedron & Emily Zhou
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/giscience-research/geog281a" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant:false", "navigation.instant.progress", "navigation.indexes", "navigation.footer", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+      
+        <script src="../../javascripts/lightbox-init.js"></script>
+      
+        <script src="../../javascripts/embed-refresh.js"></script>
+      
+    
+  </body>
+</html>
