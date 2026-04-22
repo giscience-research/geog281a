@@ -162,5 +162,8 @@ nav:
       - Spatial Ontologies - Space: module2/ontologies1.md
       - Spatial Ontologies - Place: module2/ontologies2.md
       - Spatial Ontologies - Process: module2/ontologies3.md
+  - Spatial Data:
+      - The Nature of Spatial Data: module2/data-models.md
+      - Spatial Database Management: module2/database-management.md
   - ACTIVITIES:
       - Week 1: activities/wk1.md
