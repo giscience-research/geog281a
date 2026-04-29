@@ -165,5 +165,8 @@ nav:
   - Spatial Data:
       - The Nature of Spatial Data: module2/data-models.md
       - Spatial Database Management: module2/database-management.md
+  - Cartographic Representation:
+      - Modern Cartographic Research: module3/maps1.md
+      - Maps as Systems of Inference: module3/maps2.md
   - ACTIVITIES:
       - Week 1: activities/wk1.md
