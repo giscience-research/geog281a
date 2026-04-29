@@ -1,0 +1,1372 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An instruction booklet for the GIScience Research class at UCSB. ">
+      
+      
+        <meta name="author" content="Emily Zhou & Peter Kedron">
+      
+      
+        <link rel="canonical" href="https://github.com/giscience-research/geog281a/module3/maps2/">
+      
+      
+        <link rel="prev" href="../maps1/">
+      
+      
+        <link rel="next" href="../../activities/wk1/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/fav.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Maps as Systems of Inference - GIScience Research</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3:300,300i,400,400i,700,700i%7CSource+Code+Pro:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Source Sans 3";--md-code-font:"Source Code Pro"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../styles/extra.css">
+    
+      <link rel="stylesheet" href="../../styles/tufte-notes.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#maps-as-systems-of-inference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="GIScience Research" class="md-header__button md-logo" aria-label="GIScience Research" data-md-component="logo">
+      
+  <img src="../../assets/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GIScience Research
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Maps as Systems of Inference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/giscience-research/geog281a" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    giscience-research/geog281a
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="GIScience Research" class="md-nav__button md-logo" aria-label="GIScience Research" data-md-component="logo">
+      
+  <img src="../../assets/icon.svg" alt="logo">
+
+    </a>
+    GIScience Research
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/giscience-research/geog281a" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    giscience-research/geog281a
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WELCOME
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    COURSE INFO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Re-defining GIScience
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Re-defining GIScience
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module1/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is GIScience?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module1/debate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tool-Science Debate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module1/giscience-geography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GIScience and Geography
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Space, Place, & Process
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Space, Place, & Process
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module2/ontologies1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Ontologies - Space
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module2/ontologies2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Ontologies - Place
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module2/ontologies3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Ontologies - Process
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Spatial Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module2/data-models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Nature of Spatial Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module2/database-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Database Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cartographic Representation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cartographic Representation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maps1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modern Cartographic Research
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maps as Systems of Inference
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maps as Systems of Inference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scientific-cartography-and-scientific-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scientific Cartography and Scientific Thinking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elements-of-map-inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elements of Map Inference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Elements of Map Inference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Projection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#symbolization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Symbolization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#geovisualization-and-the-process-of-inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Geovisualization and the Process of Inference
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maintaining-a-scientific-approach-to-cartography" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Maintaining a Scientific Approach to Cartography
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Maintaining a Scientific Approach to Cartography">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acknowledgement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acknowledgement
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ACTIVITIES
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ACTIVITIES
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activities/wk1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Week 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="maps-as-systems-of-inference"><strong>Maps as Systems of Inference</strong></h1>
+<p>We have discussed so far different focal areas of cartographic research: representation and map design, as well as interaction, inference, and knowledge production through map use. Together, these perspectives move cartography forward from designing maps as static representations to understanding them as interactive systems through which users generate insight.</p>
+<p>However, this shift raises a more fundamental question that we have touched on but not yet addressed directly: <strong>What is it, exactly, that users are reasoning with or inferring from?</strong></p>
+<p>Regardless of whether a map is static or interactive, inference does not occur independently of representation. Instead, it is grounded in the underlying structure of the map itself. This means that rather than moving away from the fundamentals of cartography, thinking about inference requires us to return to them but with a different perspective. To make this connection explicit, we organize this page around four guiding questions:</p>
+<ul>
+<li>Why does inference need to be studied?</li>
+<li>What is inference based on?</li>
+<li>How does inference unfold over time?</li>
+<li>How can inference be studied and improved?</li>
+</ul>
+<h2 id="scientific-cartography-and-scientific-thinking"><strong>Scientific Cartography and Scientific Thinking</strong></h2>
+<p>This line of thinking connects directly to earlier traditions in cartography, particularly the idea of scientific cartography. As early as the 19<sup>th</sup> century, cartography was framed as a scientific endeavor, in part because thematic map design involves both deduction and induction, which are forms of reasoning closely associated with scientific practice. From this perspective, “scientific cartography” constrains artistic imagination in ways that allow maps to effectively communicate their content, through the establishment and application of design rules and principles.</p>
+<p>Subsequently, a <strong>functionalist</strong> approach to scientific cartography emerged, focusing on understanding how specific visual elements function in communicating information to the map reader. The goal was not simply to design maps, but to understand how and why they work. To investigate these questions, cartographers began applying the scientific method, using reason and logic to evaluate design choices. Cartography is neither an experimental science like physics nor a truth-seeking discipline like the social sciences, but it nevertheless employs the scientific method through systematic reasoning.</p>
+<p>Importantly, this functionalist perspective challenged earlier notions of “map logic” based on convention. In The Look of Maps (Robinson, 1952), it was argued that rules such as “brown is the best color for terrain” are not universal truths, but conventions that must be empirically tested. Functionalist cartography therefore shifted attention toward the <strong>systematic study of map users</strong>, rather than maps alone, in order to provide more objective evidence about the effectiveness of design decisions.</p>
+<p>In line with this positivist approach, scholars developed theories to explain how maps are read and understood. One of the most influential was the <strong>map communication model (Figure 1)</strong>. The aim of this model was to transfer the mental model of the cartographer to that of the map reader while minimizing information loss. </p>
+<div align="center">
+    <img src="../../assets/mapmodel.png" alt="mapmodel" width="450" height="450">
+</div>
+
+<p><strong>Figure 1</strong>: A schematic depiction of common components of map communication models and their functional relationships to each other.</p>
+<p>However, this model was not without critique. Some scholars questioned its goal of producing a single “optimal map,” arguing that such solutions often carry both overt and hidden biases (Monmonier, 1991). Others pointed out that not all maps are designed to communicate a fixed message—many are intended to support exploration rather than transmission.</p>
+<p>In summary, scientific cartography emerged as an approach focused on systematically studying how design choices shape interpretation. Rather than treating maps as neutral representations, this perspective recognizes that variations in scale, projection, and symbolization can lead to different understandings of the same underlying data.</p>
+<h2 id="elements-of-map-inference"><strong>Elements of Map Inference</strong></h2>
+<p>Following this line of thought, we can more directly connect cartographic representation to inference by returning to the fundamental elements of maps and examining how different aspects of a map shape what users are able to see and interpret. The following elements, scale, projection, and symbolization, are central to this process.</p>
+<h3 id="scale"><strong>Scale</strong></h3>
+<p>Scale is one of the most fundamental elements shaping what can be inferred from a map. Because maps are necessarily smaller than the reality they represent, scale determines the level of detail that can be included and, consequently, the patterns that can be observed.</p>
+<p>It is helpful to distinguish between two meanings of scale. <strong>Geographic scale</strong> refers to the general scope or extent of phenomena, in the way we use the term in everyday language. In this sense, “large scale” refers to something covering a large area, such as a country or the entire globe.</p>
+<p><strong>Cartographic scale</strong>, however, is defined mathematically and may feel counterintuitive at first. It is often expressed as a representative fraction. For example, a map with a scale of 1:24,000 means that one unit on the map represents 24,000 units in the real world. When we “zoom in,” the denominator becomes smaller (e.g., 1:10,000), and the map is considered large scale because features appear larger and more detailed. Conversely, “small-scale” maps are more zoomed out. A useful way to remember this is: an area appears larger on a large-scale map and smaller on a small-scale map.</p>
+<p>A map can represent its scale in three ways <strong>(Figure 2)</strong>: <strong>as a ratio, a verbal statement, or a graphic scale</strong>. Ratio scales relate one unit of distance on the map to a corresponding unit on the ground (e.g., 1:10,000), and are dimensionless as long as the units are consistent. Verbal scales, such as “one inch represents one mile,” are often more intuitive for users. Graphic scales, however, are typically the most reliable, especially when maps are resized, since they scale proportionally with the map itself. For example, a 5-inch-wide map labeled “1:50,000” would have a scale less than 1:80,000 if reduced to fit a newspaper column or a mobile-device screen that is 3 inches wide, whereas a scale bar representing a half mile would shrink along with the map’s other symbols and distances.</p>
+<div align="center">
+    <img src="../../assets/mapscales.png" alt="mapscale" width="500" height="500">
+</div>
+
+<p><strong>Figure 2</strong>: Three common ways to represent cartographic scale</p>
+<p>Web-based maps and similar interactive applications exemplifies a fourth type of map scale: the zoom slider that moves up or down to indicate
+relative distance above the surface, or the interactive plus and minus buttons that produce the same effect. Zooming out yields a broader geographic scope with a smaller scale and less detail, and zooming in provides a narrower view with greater detail.</p>
+<p><iframe
+  src="https://cartoguophy.com/web/harry_potter.html"
+  width="900"
+  height="500"
+  style="border:0;">
+</iframe>
+</p>
+<p><strong>Figure 3</strong>: Here is an example of a very unique Harry Potter themed web map where you could scale in an interactive setting. The author designed a custom basemap in Mapbox. Map by Atlas Guo at <a href="https://cartoguophy.com/web/harry_potter.html">Cartoguophy</a></p>
+<p><a href="../../assets/greatwall.jpg" class="zoomable">
+  <img src="../../assets/greatwall.jpg" style="width: 100%;">
+</a></p>
+<p><strong>Figure 4</strong>: In addition to conventional representations, some maps express scale in more interpretive ways. In this Great Wall visualization (lower left corner), scale is described verbally in relation to the viewer’s perspective (e.g., “the closer you see, the larger the scale”). Rather than treating scale as fixed, this approach frames it as something that changes with distance and viewpoint, making spatial relationships more intuitive. Map by Zhaoxu Sui. See the full portfolio <a href="https://www.zhaoxusui.com/Maps">here</a>.</p>
+<p>Importantly, data also has scale. Data is collected or digitized at a particular resolution, which constrains how it can be displayed. Ideally, a map should not be shown at a larger scale than its underlying data supports. For example, census data collected at the state level cannot be meaningfully displayed at the block level. Similarly, the resolution of vector or raster data affects how much detail can be represented. These constraints directly influence what patterns are visible and what conclusions can be drawn.</p>
+<p>As Monmonier notes, large-scale maps allow finer detail, while small-scale maps require greater generalization and omission, effectively limiting the map’s “capacity for truth.” These differences are not merely technical because they shape interpretation. At smaller scales, local variation is smoothed out, making broad regional patterns more visible; at larger scales, local heterogeneity becomes apparent. In this sense, scale acts as a filter on reality, structuring what users are able to observe and analyze, and therefore influencing the kinds of questions that can be asked and the conclusions that can be drawn.</p>
+<h3 id="projection"><strong>Projection</strong></h3>
+<p>Projection further illustrates how cartographic design shapes inference by determining how spatial relationships are preserved or distorted. Because the Earth’s curved surface must be transformed onto a flat plane, projections distort five key geographic properties: area, angles, shape, distance, and direction. Some projections preserve local angles but distort area, while others preserve area but distort shape. No projection can preserve all properties simultaneously.</p>
+<p>We all know how projections work in principle. But a more important question is: why do so many different projections exist at all?</p>
+<p>The answer lies in their functional purpose. Because no projection can preserve all geographic properties at once, each projection is designed to prioritize certain relationships depending on the task at hand. For example, the Mercator projection preserves local angles and direction, allowing straight lines to represent constant compass bearings (rhumb lines), which makes it highly useful for navigation. In contrast, the gnomonic projection represents great-circle routes as straight lines, showing the shortest path between two points. In practice, navigators often use both: the gnomonic projection to identify the shortest route, and the Mercator projection to follow it using manageable directional segments.</p>
+<p>More broadly, commonly used projections can be grouped by what they preserve:</p>
+<ul>
+<li>Conformal projections (e.g., Mercator): preserve angles and shape locally, <strong>useful for navigation</strong></li>
+<li>Equal-area projections (e.g., Albers, Mollweide): preserve area, <strong>useful for comparison and analysis</strong></li>
+<li>Equidistant projections: preserve distance from certain points, <strong>useful for travel and communication planning</strong></li>
+<li>Compromise projections (e.g., Robinson, Winkel Tripel): balance distortions, <strong>useful for general-purpose reference maps</strong></li>
+</ul>
+<p>Each of these tradeoffs support different kinds of inference. For example, projections that exaggerate area can lead users to overestimate the importance or size of certain regions, while equal-area projections are better suited for comparing spatial extent. Practically, comparing country sizes requires an equal-area projection, while understanding directional relationships benefits from a conformal one. In this sense, projection determines what kinds of spatial reasoning are valid.</p>
+<p>Beyond these common projections, cartographers have also developed more unconventional projections that may appear unusual at first glance, but are often designed for specific analytical or communicative purposes.<sup><a class="sidenote-ref" href="#sn-3">1</a></sup></p>
+<div class="sidenote" id="sn-1">
+<strong>1.</strong> For more information on all kinds of projections, see<a href="https://gisgeography.com/map-projection-types/">here</a>.</div>
+
+<div class="image-row">
+  <a href="../../assets/berghaus-star.png" class="zoomable">
+    <img src="../../assets/berghaus-star.png">
+  </a>
+
+  <a href="../../assets/bonne.png" class="zoomable">
+    <img src="../../assets/bonne.png">
+  </a>
+</div>
+
+<p><strong>Figure 5</strong>: <strong>Left</strong> - The Berghaus star projection divides the globe into wedge-shaped segments radiating from a central point. This design reduces distortion by interrupting the map, rather than stretching it continuously across the surface. While it is not commonly used for navigation or everyday reference, it is useful for polar-centered views and for minimizing distortion across multiple regions simultaneously. <strong>Right</strong> - The Bonne projection, often appearing heart-shaped, is a pseudoconical equal-area projection. Its primary strength is preserving area, making it useful for thematic mapping where accurate comparisons of size are important. Although its shape may seem decorative, it reflects a specific mathematical property: parallels are concentric arcs, and distances along them are preserved. This makes it useful for certain regional analyses, even if it is less common in modern digital mapping.</p>
+<div class="image-row">
+  <a href="../../assets/cassini.png" class="zoomable">
+    <img src="../../assets/cassini.png">
+  </a>
+
+  <a href="../../assets/cube.png" class="zoomable">
+    <img src="../../assets/cube.png">
+  </a>
+</div>
+
+<p><strong>Figure 6</strong>: <strong>Left</strong> - The Cassini projection is a cylindrical projection centered on a single meridian, where distances along that central line are preserved. The Cassini projection was historically used for regional mapping, particularly in early national surveys. <strong>Right</strong> - The cube projection is a type of polyhedral projection, where the Earth is projected onto the faces of a three-dimensional shape (in this case, a cube) and then unfolded into a flat surface. Each face of the cube preserves spatial relationships relatively well within its region, but edges between faces create discontinuities. While this makes the map less intuitive for continuous navigation, it can be useful for balancing distortion globally or for creating visually structured representations of space.</p>
+<div class="image-row">
+  <a href="../../assets/eckert.png" class="zoomable">
+    <img src="../../assets/eckert.png">
+  </a>
+
+  <a href="../../assets/goodeland.png" class="zoomable">
+    <img src="../../assets/goodeland.png">
+  </a>
+</div>
+
+<p><strong>Figure 7</strong>: <strong>Left</strong> - The Eckert projection is a family of equal-area pseudocylindrical projections designed to balance visual clarity with accurate area representation. Its shape, wider near the equator and tapered toward the poles, reflects an attempt to distribute distortion more evenly across the map. While continents may appear slightly stretched or compressed, the projection supports more reliable comparisons of spatial extent, which is critical for many analytical tasks. From an inferential perspective, this projection is better suited for questions like “Which region is larger?” or “How does distribution vary globally?”, rather than for navigation or precise local measurements. <strong>Right</strong> - Goode’s Homolosine projection takes a different approach by introducing intentional interruptions, often described as an “orange peel” map. It combines two projections to preserve area while minimizing distortion across continents, at the cost of breaking the map into separate lobes. By interrupting the oceans, the projection reduces distortion where it matters most, making it especially useful for global thematic mapping, such as climate patterns or population distribution.</p>
+<h3 id="symbolization"><strong>Symbolization</strong></h3>
+<p>Symbolization provides the visual language through which users interpret spatial data, and is therefore central to how inference occurs.</p>
+<p>Understanding symbolization begins with two foundational ideas: <strong>the three geometric types of symbols and the six visual variables</strong>. Symbols on maps are typically represented as <strong>points, lines, or areas</strong>. Most general-purpose maps combine all three: for example, point symbols for landmarks, line symbols for roads and rivers, and area symbols for regions such as parks or cities. In contrast, statistical maps often rely on a single type of symbol, such as dots or shaded areas, to represent numerical data.</p>
+<p>To convey differences, symbols vary along six visual variables: <strong>size, shape, value (graytone), texture, orientation, and hue (color)</strong>. Each of these variables is suited to different types of data. Shape, texture, and hue are effective for representing qualitative differences, such as land use or categories. For quantitative differences, size is often used to represent counts or magnitude, while graytone value is preferred for ordered data, such as rates or intensities. Orientation is typically used for directional phenomena, such as wind or movement.</p>
+<div align="center">
+    <img src="../../assets/visualvariables.png" alt="visualvariables" width="450" height="450">
+</div>
+
+<p><strong>Figure 8</strong>: The six visual variables and their typical applications for representing different types of data. </p>
+<p>A key challenge in map design is ensuring a good match between the data and the chosen visual variable. Poor matches can frustrate or confuse users and interfere with inference. One common issue is the misuse of color: novice mapmakers may use multiple bright hues to represent quantitative differences, even though colors are not easily perceived as ordered. In contrast, graytone values, ranging from light to dark, are much easier for users to interpret as increasing or decreasing quantities.</p>
+<div style="display: flex; gap: 20px; justify-content: center; align-items: flex-start;">
+  <a href="../../assets/maine1.png" class="zoomable" style="height: 500px;">
+    <img src="../../assets/maine1.png" style="height: 500px; width: auto;">
+  </a>
+  <a href="../../assets/maine2.jpg" class="zoomable" style="height: 500px;">
+    <img src="../../assets/maine2.jpg" style="height: 500px; width: auto;">
+  </a>
+</div>
+
+<p><strong>Figure 9</strong>: Two maps visualizing the same ecological dataset using different symbolization strategies. While both represent identical information, they differ in their use of visual variables such as color, size, and symbol type. These differences shape how patterns are perceived, compared, and interpreted. Which map better supports your understanding of the data and why?</p>
+<p>This problem is compounded by perceptual limitations. Most users cannot reliably organize colors into a consistent sequence, and those with color vision deficiencies may struggle to distinguish certain hues (e.g., red and green). By comparison, users can more easily interpret a sequence of graytones, where darker typically indicates more and lighter indicates less. While a legend can help make a confusing map usable, it cannot make it efficient. More broadly, issues such as poor contrast, overly complex symbols, inconsistent classification, or excessive visual clutter can all interfere with inference by making patterns harder to perceive and relationships more difficult to interpret.</p>
+<p>From the perspective of cartographic visualization, symbolization plays a critical role in guiding attention, supporting comparison, and enabling pattern recognition. In this way, symbolization directly shapes what users notice, how they interpret relationships, and ultimately what they are able to infer from the map.</p>
+<p>If you’re interested in more detailed design rules and methods, there is a rich body of work on different elements of maps from the UCGIS BoK Entries.<sup><a class="sidenote-ref" href="#sn-3">2</a></sup></p>
+<div class="sidenote" id="sn-2">
+<strong>2.</strong> For more information, see: 
+<a href="https://gistbok-topics.ucgis.org/CV-03-004">Scale and Generalization</a>,
+<a href="https://gistbok-topics.ucgis.org/CV-03-007">Visual Hierarchy and Layout</a>,
+<a href="https://gistbok-topics.ucgis.org/CV-03-008">Symbolization</a>,
+<a href="https://gistbok-topics.ucgis.org/CV-03-009">Color Theory</a>,
+<a href="https://gistbok-topics.ucgis.org/CV-03-006">Map Projections</a>.
+</div>
+
+<p>At this point, it is important to recognize a fundamental principle of cartography: maps do not simply represent reality. As Mark Monmonier (Chapter 3) argues, all maps tell “white lies,” not because they are deceptive, but because distortion is unavoidable when representing a complex world in limited space.</p>
+<p>The elements we have discussed, scale, projection, and symbolization, are the primary sources of these distortions. Each involves choices about what to include, what to omit, and how to structure information.</p>
+<p>Importantly, these distortions play critical roles on inference. A map designed for navigation prioritizes direction, while a statistical map prioritizes comparison; each supports different kinds of reasoning. Then the key question is beyond whether a map is accurate, but again, how its design choices shape what users are able to see and interpret. </p>
+<h2 id="geovisualization-and-the-process-of-inference"><strong>Geovisualization and the Process of Inference</strong></h2>
+<p>It is useful to consider the perspective of geovisualization as a way of understanding how inference unfolds over time. Foundational frameworks such as DiBiase’s “Swoopy” model and MacEachren’s Cartography conceptualize maps as part of a broader process of visual thinking and knowledge construction. These frameworks describe a continuum of map use—from exploration, to analysis, to synthesis, and ultimately to presentation or communication. Rather than discrete steps, these stages are interconnected, with users iteratively engaging with data and refining their understanding.</p>
+<p>A key contribution of MacEachren’s Cartography framework is the introduction of interaction, user type, and task as central dimensions. It highlights that maps are used differently depending on whether the goal is exploratory analysis or communication, whether the user is an expert or a member of the public, and how much interaction is available. Highly interactive environments are typically associated with expert users engaged in exploratory tasks, where users generate hypotheses, manipulate data, and test ideas. In contrast, lower levels of interaction are often associated with communication tasks, where maps are designed to clearly convey established findings to broader audiences.</p>
+<div align="center">
+    <img src="../../assets/geoviz.png" alt="geoviz" width="850" height="750">
+</div>
+
+<p><strong>Figure 10:</strong> <strong>Left</strong>- DiBiase’s (1990) “Swoopy”. <strong>Right</strong> - MacEachren’s (1994) Cartography3 conceptualization of geovisualization on tasks, users, and interaction types as dimensions.</p>
+<p>From this perspective, inference is an <strong>iterative and evolving process</strong>. Users begin by exploring data to identify patterns or anomalies, then analyze relationships and test hypotheses, synthesize findings into broader insights, and ultimately communicate their conclusions. This process is often supported by interactive systems that allow users to generate new map views in response to questions in near real time, aligning the pace of visualization with the pace of thinking. With the rise of geovisual analytics, this process is further enhanced through the integration of visualization with computational methods, combining human perceptual strengths with machine-based analysis to support more complex reasoning.</p>
+<h2 id="maintaining-a-scientific-approach-to-cartography"><strong>Maintaining a Scientific Approach to Cartography</strong></h2>
+<p>The idea that map elements shape inference leads directly to the need for maintaining ascientific approach to map design. If different choices in scale, projection, or symbolization lead to different interpretations, then map design cannot rely solely on intuition or convention, but must be studied, tested, and evaluated.</p>
+<p>Scientific cartography therefore focuses on understanding how design decisions influence perception, interpretation, and usability. This includes empirical studies of visual variables, classification schemes, and layout choices, all aimed at determining how maps can better support accurate and effective reasoning. In this sense, the fundamental elements described earlier become not just design components, but variables in a broader scientific investigation of how maps shape understanding.</p>
+<p>More broadly, scientific approaches to map design aim to understand maps, mapmaking, and map use with the goal of improving how maps function. This research takes several forms. Some studies apply the scientific method directly, using controlled experiments to test how maps are read, used, or understood. Other work develops empirical observations of map use or design practices to generate hypotheses for further testing. A third line of research connects user-centered design with participatory approaches, working collaboratively with communities to co-design maps that address real-world problems. Across these approaches, a key goal is to produce knowledge that is generalizable or transferable to other contexts.</p>
+<p>Beyond design itself, cartography should also examine how maps support scientific thinking and the generation of new knowledge. This perspective connects directly to earlier discussions of interaction and geovisualization. With digital mapping, users can generate maps dynamically, explore data iteratively, and pose new questions in near real time. Maps thus function not only as tools for presenting results, but also for exploration, hypothesis generation, and analytical reasoning.</p>
+<p>Taken together, we bring forward the central idea of this lesson: <strong>cartography is not simply about representing the world; it is part of how knowledge is produced, evaluated, and shared.</strong></p>
+<h4 id="acknowledgement">Acknowledgement</h4>
+<p>We would like to thank Zhaoxu Sui (PhD student, Penn State University) and Atlas Guo (PhD, University of Wisconsin–Madison), whose work focuses on cartographic representation and geovisualization, for generously sharing examples used in this lesson. We also thank Dr. Jeff Howarth, Associate Professor and the creator of Middlebury’s GIS/Cartography curriculum, for many of the materials that informed the development of this lesson.</p>
+<p>If you are interested in learning more about cartography, please feel free to explore the following resources compiled by Zhaoxu Sui (linked <a href="https://docs.google.com/document/d/1Z_owJVT6QIVFF_POlrs5FaXrJFVnDDiXkPaXGMFpmLw/edit?tab=t.0"><strong>here</strong></a>.)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../maps1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Modern Cartographic Research">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Modern Cartographic Research
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../activities/wk1/" class="md-footer__link md-footer__link--next" aria-label="Next: Week 1">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Week 1
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Peter Kedron & Emily Zhou
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/giscience-research/geog281a" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant:false", "navigation.instant.progress", "navigation.indexes", "navigation.footer", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+      
+        <script src="../../javascripts/lightbox-init.js"></script>
+      
+        <script src="../../javascripts/embed-refresh.js"></script>
+      
+    
+  </body>
+</html>

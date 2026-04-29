@@ -1,0 +1,1467 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An instruction booklet for the GIScience Research class at UCSB. ">
+      
+      
+        <meta name="author" content="Emily Zhou & Peter Kedron">
+      
+      
+        <link rel="canonical" href="https://github.com/giscience-research/geog281a/module3/maps1/">
+      
+      
+        <link rel="prev" href="../../module2/database-management/">
+      
+      
+        <link rel="next" href="../maps2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/fav.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Modern Cartographic Research - GIScience Research</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3:300,300i,400,400i,700,700i%7CSource+Code+Pro:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Source Sans 3";--md-code-font:"Source Code Pro"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../styles/extra.css">
+    
+      <link rel="stylesheet" href="../../styles/tufte-notes.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#from-cartographic-representation-to-interaction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="GIScience Research" class="md-header__button md-logo" aria-label="GIScience Research" data-md-component="logo">
+      
+  <img src="../../assets/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GIScience Research
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Modern Cartographic Research
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/giscience-research/geog281a" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    giscience-research/geog281a
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="GIScience Research" class="md-nav__button md-logo" aria-label="GIScience Research" data-md-component="logo">
+      
+  <img src="../../assets/icon.svg" alt="logo">
+
+    </a>
+    GIScience Research
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/giscience-research/geog281a" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    giscience-research/geog281a
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WELCOME
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    COURSE INFO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Re-defining GIScience
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Re-defining GIScience
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module1/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is GIScience?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module1/debate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tool-Science Debate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module1/giscience-geography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GIScience and Geography
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Space, Place, & Process
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Space, Place, & Process
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module2/ontologies1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Ontologies - Space
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module2/ontologies2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Ontologies - Place
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module2/ontologies3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Ontologies - Process
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Spatial Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module2/data-models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Nature of Spatial Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module2/database-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Database Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cartographic Representation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cartographic Representation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modern Cartographic Research
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modern Cartographic Research
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mapmaking-and-representation-in-cartography" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mapmaking and Representation in Cartography
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mapmaking and Representation in Cartography">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#color" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Color
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#typography" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Typography
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iconography" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Iconography
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#texture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Texture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reference-and-thematic-map-taxonomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reference and Thematic Map Taxonomy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluating-map-representation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluating Map Representation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#map-use-interaction-and-inference-in-cartography" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Map Use, Interaction, and Inference in Cartography
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Map Use, Interaction, and Inference in Cartography">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interaction-as-humanmap-dialogue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interaction as Human–Map Dialogue
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-interaction-design-and-research" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Interaction Design and Research
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-experience-design-and-research" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Experience Design and Research
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evaluating-inferential-challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluating Inferential Challenges
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maps2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maps as Systems of Inference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ACTIVITIES
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ACTIVITIES
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../activities/wk1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Week 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="from-cartographic-representation-to-interaction"><strong>From Cartographic Representation to Interaction</strong></h1>
+<p>In previous lessons, we focused primarily on how knowledge is represented. In other words, how we take a complex world and encode it into structured forms, such as ontological frameworks (space, place, process), data models (raster and vector), and visualizations. However, representation is only one part of the story and only one stage in the broader process of geographical analysis. Recall the flow diagram from our course introduction: once knowledge is encoded, we still need to make sense of it. This involves interpreting, questioning, and ultimately drawing conclusions, which then become new knowledge about the world. Now, we need to shift our focus to the next stage: inference.</p>
+<p>To ground this shift, we turn to <strong>cartography</strong>, where the transition from representation to inference is especially visible. Cartography has long been concerned with <strong>representation</strong>: how to effectively depict spatial phenomena on a map, whether on paper or screen, in ways that are clear and interpretable.</p>
+<p>However, contemporary cartographic research has moved beyond representation alone. Increasingly, it asks:</p>
+<ul>
+<li>How are maps used?</li>
+<li>How do people interact with them?</li>
+<li>How do maps support reasoning and decision-making?</li>
+</ul>
+<p>In other words, the focus has expanded from what a map shows to what a map enables us to do and understand. We will examine this shift from representation to <strong>inference</strong> through the lens of maps and modern cartographic research. At the same time, it is important to note that these questions extend well beyond cartography. The same transition applies to many forms of geographic knowledge, including: statistical models, simulations, spatial decision support systems etc. Regardless of the specific form, the underlying challenge is the same: how do we move from encoded representations to meaningful interpretation and informed decisions?</p>
+<h2 id="mapmaking-and-representation-in-cartography"><strong>Mapmaking and Representation in Cartography</strong></h2>
+<p>We begin by formally examining cartographic research practices whose primary focus is on representation and those concerned with inference.</p>
+<p>Traditional cartography has long been grounded in a representational paradigm, where the central task is to design maps that effectively encode and communicate information about the world. The emphasis is on map-making:constructing visual representations that clearly and accurately convey a message. Within this paradigm, maps are understood as vehicles for communication, in which the cartographer encodes information, and the user decodes it. As such, research has focused heavily on optimizing this transmission, with particular attention to: clarity, accuracy, and perceptual effectiveness</p>
+<p>This includes a wide range of design considerations, such as: fonts and typography, color selection and harmony, imagery and iconography, patterns and textures,tone and visual hierarchy, linework and stylistic choices, and many more.</p>
+<p>For example, cartographers might ask:</p>
+<ul>
+<li>How many colors are appropriate to effectively convey information while maintaining visual harmony?
+Does the thickness of linework or the density of patterns align with the importance of the features being represented?</li>
+<li>Are typographic choices consistent with the overall style and purpose of the map?</li>
+<li>How do we balance information clarity, aesthetic quality, cartographic conventions, and creative expression?</li>
+</ul>
+<p>Summarized succinctly, research in this tradition has centered on four key elements of map design: <strong>color, typography, iconography, and texture</strong> <sup><a class="sidenote-ref" href="#sn-1">1</a></sup>.</p>
+<div class="sidenote" id="sn-1">
+<strong>1.</strong> If you are interested in the full detail of map design, see the references from Mapbox <a href="https://www.mapbox.com/insights/map-design-process">here</a></div>
+
+<h3 id="color"><strong>Color</strong></h3>
+<p>Color plays a central role in map design. It is used to attract attention, group similar elements, convey meaning, and enhance aesthetics. In practice, cartographers typically begin the design process by developing a color palette. This is often an iterative process, where colors are tested and refined in relation to the data, layout, and overall design goals. Research in this area engages with a range of concepts from color theory, including: balance and visual hierarchy, chroma (color intensity), color combinations and harmony, color systems (e.g., color trees), complementary and contrasting colors (<strong>Figure 1</strong>).</p>
+<p><img alt="color" src="../../assets/goc.png" />
+<strong>Figure 1</strong>: Three fundamental dimensions of color: hue, chroma, and lightness. Adapted from Cleland’s <em>A Grammar of Color</em> <a href="../../readings/wk5/Cleland18-26.pdf">Page 13-26</a><sup><a class="sidenote-ref" href="#sn-2">2</a></sup>.</p>
+<div class="sidenote" id="sn-2">
+<strong>2.</strong> The full book is available<a href="https://drive.google.com/file/d/1LWodg6b6Sg8-vzUBlG4ky6PuzNXDD_1v/view">here</a></div>
+
+<p>A long-standing question in cartographic design is: how many colors should be used in a map? In general, cartographers tend to use color conservatively. Human visual perception is limited, and overly complex color schemes can overwhelm the reader and reduce clarity. As a result, a limited and well-structured color palette is typically preferred. For many maps, a palette of approximately 10–12 colors is sufficient to support a full design while maintaining readability and coherence. However, the appropriate number ultimately depends on the complexity and purpose of the map.</p>
+<p>Adhering to established cartographic color conventions is important as certain colors are commonly associated with specific types of features. For example, many features related to navigation and transportation are often represented using similar shades of black and red. This consistency helps users quickly associate colors with certain types of features, such as: rail labels, highway shields, ferry routes, and road casings.</p>
+<p>Especially in many reference maps,color palettes are not arbitrary but follow established conventions. Over time, users have developed expectations that certain colors correspond to certain types of features (<strong>Figure 2</strong>). </p>
+<div class="image-row">
+  <a href="../../assets/mapbox.png" class="zoomable">
+    <img src="../../assets/mapbox.png">
+  </a>
+
+  <a href="../../assets/gmap.jpg" class="zoomable">
+    <img src="../../assets/gmap.jpg">
+  </a>
+</div>
+
+<p><strong>Figure 2</strong>: Examples of color conventions in cartography. Left: Mapbox&rsquo;s Streets style, which follows established conventions for green spaces and water features. Right: Google Maps, which also adheres to similar color conventions.</p>
+<p>For example, in Google Map&rsquo;s color system, colors are organized not only by category but also by gradients within each category. Blue is consistently used for water, green for vegetation, yellow or beige for corridors and open land, gray for built environments, and red is reserved sparingly for high-salience features. Each category includes a range of tonal values (e.g., 50–800), allowing designers to adjust contrast and hierarchy while maintaining semantic consistency. Mapbox employs a refined palette in which land is shown in neutral beige tones, water in blue, greenspace in soft green, and transportation networks in distinct yet harmonized hues, with points of interest remaining muted but legible. Importantly, the effectiveness of these systems lies not in the specific colors themselves, but in the consistency of their mapping to meaning. Over time, users learn to intuitively associate blue with water, green with vegetation, and gray with urban or built environments.</p>
+<p>An interesting pivot emerges here: is color always necessary?</p>
+<p><strong>The answer is no!</strong></p>
+<p>Cartographic research has also explored monochrome mapping, where maps are designed using a single color (or variations of a single hue). This approach challenges the assumption that more color leads to better communication. Monochrome map design rely on: value (lightness vs. darkness) to create contrast, texture and pattern to differentiate features, line weight and hierarchy to guide attention, and careful composition to maintain clarity without relying on hue differences (<strong>Figure 3</strong>).</p>
+<p>Rather than reducing effectiveness, monochrome maps often enhance clarity by removing unnecessary visual complexity. They force the designer to think more carefully about: what information is most important
+how visual hierarchy is constructed, and how different elements are distinguished without relying on color. In this sense, color is only one tool among many. Effective map design depends not on the number of colors used, but on how well visual variables are coordinated for effective representation.</p>
+<div class="image-row">
+  <a href="../../assets/dj.jpg" class="zoomable">
+    <img src="../../assets/dj.jpg">
+  </a>
+
+  <a href="../../assets/du.png" class="zoomable">
+    <img src="../../assets/du.png">
+  </a>
+</div>
+
+<p><strong>Figure 3</strong>: Example of monochrome map design, adapted from <a href="https://somethingaboutmaps.wordpress.com/monocarto-2019-winners/#BD">MonoCarto 2019</a></p>
+<h3 id="typography"><strong>Typography</strong></h3>
+<p>Typography (<strong>Figure 4</strong>) is also one of the most important design elements in a map and can make or break its readability. Labels, which account for most of the text on maps, are often only one to three words long and displayed at very small sizes. Given this constraint, fonts with taller x-heights, open counters, and minimal or no serifs tend to work best.</p>
+<p>Effective typographic design requires balancing <strong>quality and readability</strong>. High-quality fonts offer a wide range of variations, including styles (italics, caps, caps italic, small caps), weights (from ultra light to ultra black), and widths (condensed, narrow, normal, mono, expanded). These variations allow designers to create hierarchy and differentiate between types of features.</p>
+<p>Readability is not just about the font itself, but also about how text is arranged. This includes the classification of labels, the use of different label colors, and careful control of spacing so that the reader’s eye can access the content easily and clearly. At the same time, the personality of a typeface reflects the tone and energy of the map. The most common styles, sans-serif, serif, and script, each carry different visual qualities, with sans-serif fonts generally performing best on web and mobile due to lower screen resolution (DPI).</p>
+<p><img alt="typography" src="../../assets/labeling.gif" /> </p>
+<p><strong>Figure 4</strong>: The Serene Practice of Map Labeling by Daniel Huffman. See full video <a href="http://youtube.com/watch?v=UWo12NFdxJ0">here</a></p>
+<p>Research has also focused on label placement, such as the classic work by <a href="../../readings/wk5/Imhof-1975.pdf">Imhof (1975)</a> on positioning names on maps, which remains foundational in understanding how labels can be placed clearly without ambiguity.</p>
+<p>On a related note, <strong>typography and lettering (or labeling)</strong> are closely related but not identical, though they are often used interchangeably. Typography focuses on the selection and arrangement of typefaces, while lettering or labeling <sup><a class="sidenote-ref" href="#sn-3">3</a></sup> refers more broadly to the process of placing, styling, and positioning text to represent geographic features.</p>
+<div class="sidenote" id="sn-3">
+<strong>3.</strong> For practical guidance, see the <a href="https://www.axismaps.com/guide/labeling">Axis Maps</a> labeling guide, which illustrates how these principles are applied in map design.</div>
+
+<h3 id="iconography"><strong>Iconography</strong></h3>
+<p>Iconography (<strong>Figure 5</strong>) refers to the use of symbols or icons on maps, typically to represent points of interest (POIs)—such as libraries, cafés, parks, museums, or transit stops. The icons used in a map should not only communicate information clearly, but also reinforce the map’s overall visual identity, contributing to both brand recognition and readability.Effective map icons share several key characteristics: they are widely recognizable across cultures, as simple as possible, and legible at very small sizes (often as small as 11px). This makes icon design both a visual and cognitive challenge of balancing clarity, abstraction, and meaning within very limited space.</p>
+<p>Research on iconography in cartography is closely connected to semiotics, the study of signs and how they produce meaning.A sign consists of two parts: the signifier (the form of the sign, such as a shape or symbol) and the signified (the concept or meaning that the sign represents).</p>
+<p>Building on this idea, cartographic symbols can be understood in three broad types:</p>
+<ul>
+<li>Icons: These have a visual resemblance to what they represent. On maps, this is often achieved through simplification or metonymy—for example, using a small tree shape to represent a park.</li>
+<li>Indexes: These indicate something through evidence or direct connection. They often show an effect to suggest a cause and require some inference. For example, animal tracks in snow indicate the presence of an animal; similarly, a magnetic needle used to represent north can be understood as an index.</li>
+<li>Symbols: These have no inherent resemblance to what they represent and must be learned culturally. On maps, this includes place names, labels, and standardized cartographic conventions—such as dashed lines for political boundaries or intermittent streams.</li>
+</ul>
+<div class="image-row">
+  <a href="../../assets/maki.jpg" class="zoomable">
+    <img src="../../assets/maki.jpg">
+  </a>
+
+  <a href="../../assets/nps.png" class="zoomable">
+    <img src="../../assets/nps.png">
+  </a>
+</div>
+
+<p><strong>Figure 5</strong>: Examples of cartographic icons. Left: Mapbox&rsquo;s <a href="https://labs.mapbox.com/maki-icons/">Maki</a> icon set, which includes a wide range of icons for points of interest. Right: National Park Service&rsquo;s <a href="https://www.nps.gov/npgallery/AssetDetail/cd253093-6813-471e-9d16-042c2a373a97">iconography</a>, which uses simple and recognizable symbols to represent different types of parks and facilities.</p>
+<p>The value of semiotics in cartography is not to rigidly classify every map element, but to encourage intentional design choices. It helps us think more carefully about how meaning is constructed—especially when representing information without relying on words or numbers.</p>
+<h3 id="texture"><strong>Texture</strong></h3>
+<p>Texture (<strong>Figure 6</strong>) is often an additional design element in cartography, but it can play an important role in enhancing both visual differentiation and overall map aesthetics. It refers to the perceived surface quality of a design and is typically implemented through patterns.</p>
+<p>In maps, textures can be applied to features to either differentiate elements (e.g., distinguishing land use types) or visually group them. They can also function independently as background elements, creating subtle visual interest without overwhelming the map’s primary information.</p>
+<div class="image-row">
+  <a href="../../assets/texture1.png" class="zoomable">
+    <img src="../../assets/texture1.png">
+  </a>
+
+  <a href="../../assets/texture2.png" class="zoomable">
+    <img src="../../assets/texture2.png">
+  </a>
+</div>
+
+<p><strong>Figure 6</strong>: Examples of texture in historical cartography. Left: Subtle paper grain and contour-like line textures used to evoke a hand-drawn feel of water features. Right: Repeating stipple and woodgrain-inspired textures applied to building footprints and background surfaces</p>
+<p>A key consideration in using texture is that patterns must be seamless. A seamless texture is designed so that it can repeat side-by-side without visible boundaries, ensuring continuity across the map. Because textures are repeated many times, they are typically kept small in size, often in dimensions such as 16×16, 32×32, or 64×64 pixels.</p>
+<h3 id="reference-and-thematic-map-taxonomy"><strong>Reference and Thematic Map Taxonomy</strong></h3>
+<p>All of the design elements discussed so far—color, typography, iconography, and texture—are rarely considered in isolation. In practice, they are brought together and evaluated through what is often presented as a map taxonomy chart, which summarizes the full set of design decisions in a map (<strong>Figure 7</strong>).</p>
+<div class="image-row">
+  <a href="../../assets/referenceTax.png" class="zoomable">
+    <img src="../../assets/referenceTax.png">
+  </a>
+
+  <a href="../../assets/thematicTax.png" class="zoomable">
+    <img src="../../assets/thematicTax.png">
+  </a>
+</div>
+
+<p><strong>Figure 7</strong>: Examples of map taxonomy charts. Left: A reference map taxonomy chart used by Mapbox. Here, elements are broken down systematically into categories such as administrative boundaries, land use, and water labels, each with carefully controlled variations . Right: A thematic map taxonomy chart, which can vary widely based on the specific narrative and design choices. Instead of standardized categories, the taxonomy includes illustrative elements, decorative motifs (e.g., cherry blossoms, branches), stylized typography, and culturally specific icons. Even labels are treated as part of the design language, with multiple typefaces used to convey tone and narrative.</p>
+<p>For reference maps, many of these elements tend to converge toward shared conventions. There are widely accepted expectations for how features should be represented—water in blue, roads with standardized linework, labels following consistent typographic rules. As a result, taxonomy charts for reference maps often appear more uniform and standardized.</p>
+<p>In contrast, thematic (or narrative) maps can vary dramatically. Because they are designed to tell specific stories, their design systems—and thus their taxonomies—can differ significantly from one another. Here, representation becomes more flexible and expressive, shaped by the particular argument, theme, or narrative the map is trying to convey.</p>
+<h3 id="evaluating-map-representation"><strong>Evaluating Map Representation</strong></h3>
+<p>There is a fundamental question in cartographic design, pedagogy, and research: <strong>How do you know when you are done making your map? Is your representation good enough?</strong></p>
+<p>Jeff Howarth (2025) suggests evaluating maps through <a href="https://jeffhowarth.github.io/cart-patterns/">three criteria</a>:</p>
+<ul>
+<li>Total Intentionality: Every mark on the page—and everything left out—should be the result of a conscious decision.</li>
+<li>Explicit Articulation: You should be able to clearly justify every design choice.</li>
+<li>The “Aesthetic” Trap: While a map should look good, “I just liked it” is not a sufficient justification on its own.</li>
+</ul>
+<p>In practice, these ideas are grounded in four key principles of map design:</p>
+<ul>
+<li>Contrast: Attracts attention and establishes boundaries between elements</li>
+<li>Hierarchy: Helps viewers focus on what is important and identify patterns</li>
+<li>Density: Controls how much information is shown at a given scale</li>
+<li>Legibility: Ensures that all elements can be easily read and understood</li>
+</ul>
+<p>Hierarchy is especially critical. A strong visual hierarchy—often achieved through color and scale—is one of the most effective ways to improve comprehension. At the same time, managing density is essential: too much information can overwhelm the viewer and disrupt the map’s structure.</p>
+<p>Ultimately, these principles return us to the central theme of this module: <strong>representation is not just about how things look, but about how design choices structure meaning and support interpretation.</strong></p>
+<h2 id="map-use-interaction-and-inference-in-cartography"><strong>Map Use, Interaction, and Inference in Cartography</strong></h2>
+<p>So far, we have focused on maps as representations. Yet, this framing becomes insufficient in the context of contemporary, digitally mediated cartography. As mapping technologies have evolved, especially with the rise of interactive and web-based systems, maps are no longer just static products, but interfaces that users actively engage with. This requires us to expand our understanding of cartography beyond how maps are made, to also consider how they are <strong>used, interacted with, and experienced</strong>.</p>
+<p>Building on this shift, Robert Roth (2024) proposes organizing cartography along two conceptual axes: <strong>mapmaking vs. map use</strong>, and <strong>representation vs. interaction</strong>. The first reflects a distinction between the production of maps and their use, how maps function and what roles they play, while the second highlights a growing emphasis on interaction and user experience, moving beyond representation alone (<strong>Figure 8</strong>).</p>
+<div align="center">
+    <img src="../../assets/roth24.png" alt="roth" width="450" height="450">
+</div>
+
+<p><strong>Figure 8</strong>: Roth&rsquo;s framework for organizing cartographic research along two axes: mapmaking vs. map use, and representation vs. interaction. Adapted from <a href="../../readings/wk5/Roth2024.pdf">Roth (2024)</a></p>
+<p>Roth’s framework is helpful because it reminds us that studying maps today is not just about how information is encoded, but also about how users explore, manipulate, and engage with that information. This shift is particularly important for thinking about <strong>inference</strong>. It is at the intersection of map use and interaction when users explore patterns, test ideas, and interpret relationships that new knowledge is generated. Here, we will look more closely at how cartographic research operates on the interaction and map use side of this expanded conceptual space.</p>
+<h3 id="interaction-as-humanmap-dialogue"><strong>Interaction as Human–Map Dialogue</strong></h3>
+<p>To begin, Robert Roth (2013) provides a foundational account of interactive maps as a form of human–map dialogue, defining cartographic interaction as the exchange between a user and a map mediated through a computing device. In this view, cartography is no longer just about designing maps but designing systems that support human reasoning.</p>
+<p>Roth et al. (2017) further argue that the rise of digital interactivity requires us to rethink the “map reader” as a map user, and to account for the perceptual, cognitive, and practical factors that shape user experience. In many cases, insight is formed through interaction, rather than passively reading a map.</p>
+<p>Building on this foundation, subsequent research has focused on how users actually interact with maps in practice. Through interaction, users can explore data from multiple perspectives, identify patterns, and develop new insights. Roth organizes cartographic interaction around six key questions: <strong>what interaction is, why it is useful, when it should be used, who it is for, where it occurs, and how it should be designed.</strong> Together, these questions form a broader research agenda for interactive cartography.</p>
+<p>Effectively, these six questions are centered around two key directions that extends the research traditions of traditional cartography:</p>
+<ul>
+<li>Designing for user interaction</li>
+<li>Improving user experience</li>
+</ul>
+<h3 id="user-interaction-design-and-research"><strong>User Interaction Design and Research</strong></h3>
+<p>In terms of interaction, research examines how different interface elements shape how users engage with maps. Interactive maps respond to user input, allowing users to actively explore and manipulate information. Common features include:</p>
+<p><strong>Scrollable narratives</strong>: guide users through stories (e.g., story maps)</p>
+<p><strong>Animations and transitions</strong>: support temporal change or narrative flow</p>
+<p><strong>Figure 9</strong>: A good example of the use of these two features is Jake Steinberg’s <a href="https://jake-steinberg.github.io/2022_DarkSkies_js/">Dark Sky Sanctuaries</a> interactive map. As users scroll, the map unfolds as a linear narrative, gradually introducing the problem of light pollution, its causes, and its consequences. Rather than presenting all information at once, the content is chunked and sequenced, allowing users to build understanding step by step.</p>
+<p><img alt="darksky" src="../../assets/dynamic1.png" /></p>
+<p><strong>Zoom</strong>: move between global and local scales</p>
+<p><strong>Filters</strong>: refine data by criteria such as time or location</p>
+<p><strong>Figure 10</strong>: An example of these features can be seen in this <a href="https://weijingg.github.io/Practicum/">dashboard</a> on racial and ethnic trends, where users can zoom from a broader overview to more localized details. At the same time, filters enable users to subset the data so that they can focus on specific aspects of the trends.</p>
+<p><img alt="zoom" src="../../assets/dynamic3.gif" /></p>
+<p><strong>Tooltips</strong>: reveal contextual information on demand</p>
+<p><strong>Clickable layers</strong>: toggle datasets on and off to compare views</p>
+<p><strong>Overlays</strong>: add additional data layers (e.g., weather, demographics)</p>
+<p><strong>Figure 11</strong>: An example of these features can be seen in the <a href="https://cartoguophy.com/us_rising_hazard/">United States of Rising Hazards Dashboard</a> by Atlas Guo. In this project, users can toggle on and off different hazard layers and click on specific locations to access detailed information about the hazards affecting that area with the tooltips. </p>
+<p><img alt="hazards" src="../../assets/dynamic2.png" /></p>
+<p><strong>User input interfaces</strong>: allow users to contribute data or interact with backend systems</p>
+<p><strong>Figure 12</strong>: An example here is the <a href="https://emilyzhou112.github.io/engagement-project/">Montpelier Flood Dashboard</a>, where users can input their own observations of flooding events by entering an address, which is then geocoded to a point on the map. They could also select parcel, housing type, and flood severity from dropdown menus, which are then integrated into the map to provide real-time updates on flood conditions.</p>
+<p><img alt="flood" src="../../assets/dynamic4.png" /></p>
+<p>In short, research questions here operate at both the technical and the inferential levels. On the technical side, they include questions such as how to implement a tooltip in a way that is both functional and aesthetically pleasing, how to customize base tiles, design popups, connect linked charts, incorporate time sliders, or even support real-time data processing. These are not only programming tasks, but design problems that require choices about web hosting, performance, quota limits, and the use of HTML, CSS, and JavaScript to serve a larger interaction goal. On the inferential level, the questions are more about how these interactions support user reasoning. For example, how does a tooltip help users understand the context of a data point? How does a filter enable users to compare different subsets of data? How does an animation reveal temporal patterns that might be missed in a static map?</p>
+<h3 id="user-experience-design-and-research"><strong>User Experience Design and Research</strong></h3>
+<p>On user experience, Roth emphasizes that interaction cannot be understood without considering the user. As Robert Roth (2013; 2017) argues, differences in ability, expertise, and motivation shape how individuals interact with maps and what they are able to learn from them. This has led to a shift toward user-centered design, where cartographic systems are designed with specific users, tasks, and contexts in mind, rather than assuming a generic user.</p>
+<p>A lot of this work takes the form of empirical and user-centered research, including usability studies and experimental evaluations, to understand how different interaction designs influence user behavior and interpretation. For example, Roth et al. (2017) explicitly call for an expanded research agenda centered on evaluating how interactive maps support, or fail to support, user goals in practice.</p>
+<div style="display: flex; gap: 20px; justify-content: center; align-items: flex-start;">
+  <a href="../../assets/user1.png" class="zoomable" style="height: 500px;">
+    <img src="../../assets/user1.png" style="height: 500px; width: auto;">
+  </a>
+  <a href="../../assets/user2.png" class="zoomable" style="height: 500px;">
+    <img src="../../assets/user2.png" style="height: 500px; width: auto;">
+  </a>
+  <a href="../../assets/user3.png" class="zoomable" style="height: 500px;">
+    <img src="../../assets/user3.png" style="height: 500px; width: auto;">
+  </a>
+</div>
+
+<p><strong>Figure 13</strong>: Examples of user-centered design in mobile-friendly interactive map applications. <a href="https://junyi2022.github.io/earthquaker/">Left</a>: Dashboard showing distribution of earthquakes, where users can filter by magnitude and time. <a href="https://qianhengzhang.github.io/HongKongMusicAtlas/">Middle</a>: A web application that visualizes over 160 Cantonese songs referencing locations across Hong Kong and beyond. <a href="https://https://weijingg.github.io/Practicum/">Right</a>: the same race and ethnicity trends dashboard shown in <strong>Figure 10</strong>, but redesigned for mobile with a more compact layout and simplified interactions.</p>
+<p>More recent research further complicates this picture by emphasizing the importance of user context. For example, Bartling et al. (2021) studied how factors such as user expertise, task type, environment, and time pressure shape user experience in mobile map applications. Their findings suggest that the effectiveness of interaction cannot be evaluated in isolation; instead, it depends on how well it aligns with specific use contexts. In this sense, interaction is not universally beneficial, but context-dependent.</p>
+<p>In practice, this becomes especially evident in mobile thematic maps and data journalism. For example, Houtman (2025) studied how news cartographers design maps under constraints such as small screen sizes, limited attention spans, and time pressure. One key finding is that designers often reduce or simplify interactive features, not because interaction is unimportant, but because too much interaction can overwhelm users and hinder understanding. Designers must balance screen size, orientation, resolution, and generalization, while also adapting to touch-based (post-WIMP) environments and ensuring accessibility.</p>
+<p>Finally, this discussion connects directly to the challenges of geospatial big data. For example, Robinson et al. (2017) argue that the central problem in modern cartography is no longer simply how to represent geographic information, but how to help users make sense of large, complex, and dynamic datasets. This introduces both technical challenges—such as cloud computing, data pipelines, and real-time processing—and inferential challenges: how to design interactions that allow users to filter, explore, and interpret complexity without being overwhelmed.</p>
+<h3 id="evaluating-inferential-challenges"><strong>Evaluating Inferential Challenges</strong></h3>
+<p>Let&rsquo;s go back to this question again: <strong>how do you know you are done when making a web map?</strong></p>
+<p>In this context, interaction is no longer treated as a purely technical enhancement, but as a user experience (UX) problem, in addition to a design problem. The challenge is not to maximize interactivity, but to design interactions that are intuitive, efficient, and appropriate for the user’s context. In many cases, this leads to a preference for simpler interaction techniques, such as scrolling or guided narratives, over complex exploratory interfaces, especially for general audiences.</p>
+<p>But this also reframes what it means for a map to be “finished.” A map is no longer complete when its representation is polished; it is complete when its interactions successfully support user reasoning. In other words, the question shifts from “does it look right?” to “does it help users understand, explore, and draw meaningful conclusions?”</p>
+<p>Taken together, this body of work reframes cartography as the study of interactive, user-centered, and context-dependent systems. Maps are no longer just representations of information, but tools through which users explore data, construct meaning, and generate knowledge. Interaction is therefore central to the process of inference, but it is also shaped—and constrained—by design choices, user characteristics, and real-world contexts of use.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../module2/database-management/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Spatial Database Management">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Spatial Database Management
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../maps2/" class="md-footer__link md-footer__link--next" aria-label="Next: Maps as Systems of Inference">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Maps as Systems of Inference
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Peter Kedron & Emily Zhou
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/giscience-research/geog281a" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant:false", "navigation.instant.progress", "navigation.indexes", "navigation.footer", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+      
+        <script src="../../javascripts/lightbox-init.js"></script>
+      
+        <script src="../../javascripts/embed-refresh.js"></script>
+      
+    
+  </body>
+</html>
