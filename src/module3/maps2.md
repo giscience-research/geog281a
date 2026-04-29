@@ -205,3 +205,9 @@ More broadly, scientific approaches to map design aim to understand maps, mapmak
 Beyond design itself, cartography should also examine how maps support scientific thinking and the generation of new knowledge. This perspective connects directly to earlier discussions of interaction and geovisualization. With digital mapping, users can generate maps dynamically, explore data iteratively, and pose new questions in near real time. Maps thus function not only as tools for presenting results, but also for exploration, hypothesis generation, and analytical reasoning.
 
 Taken together, we bring forward the central idea of this lesson: __cartography is not simply about representing the world; it is part of how knowledge is produced, evaluated, and shared.__
+
+#### Acknowledgement
+
+We would like to thank Zhaoxu Sui (PhD student, Penn State University) and Atlas Guo (PhD, University of Wisconsin–Madison), whose work focuses on cartographic representation and geovisualization, for generously sharing examples used in this lesson. We also thank Dr. Jeff Howarth, Associate Professor and the creator of Middlebury’s GIS/Cartography curriculum, for many of the materials that informed the development of this lesson.
+
+If you are interested in learning more about cartography, please feel free to explore the following resources compiled by Zhaoxu Sui (linked [__here__](https://docs.google.com/document/d/1Z_owJVT6QIVFF_POlrs5FaXrJFVnDDiXkPaXGMFpmLw/edit?tab=t.0).)
