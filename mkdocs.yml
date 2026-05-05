@@ -76,7 +76,7 @@ extra_css:
   - styles/extra.css
   - styles/tufte-notes.css
   - https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css
-
+  - styles/map.css 
  
 # Plugins
 plugins:
@@ -148,6 +148,7 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js
   - javascripts/lightbox-init.js
   - javascripts/embed-refresh.js
+  - javascripts/zoom.js
 
 
 # Page tree
@@ -168,5 +169,10 @@ nav:
   - Cartographic Representation:
       - Modern Cartographic Research: module3/maps1.md
       - Maps as Systems of Inference: module3/maps2.md
+  - Scale:
+      - Concepts of Scale: module3/scale1.md
+      - Scale in GIScience and Cartography: module3/scale1-5.md
+      - The Openshaw Effect: module3/scale2.md
+      - What about Scope?: module3/scale3.md
   - ACTIVITIES:
       - Week 1: activities/wk1.md
