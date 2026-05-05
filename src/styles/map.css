@@ -1,0 +1,45 @@
+/* Leaflet attribution */
+.leaflet-control-attribution {
+  font-size: 9px !important;
+}
+
+/* Dropdown container */
+.map-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+/* Dropdown label */
+.map-controls label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+
+/* Dropdown select */
+.map-controls select {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.map-controls select:hover {
+  border-color: #888;
+}
+
+.map-controls select:focus {
+  outline: none;
+  border-color: #b98430;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
