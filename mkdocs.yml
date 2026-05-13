@@ -174,5 +174,8 @@ nav:
       - Scale in GIScience and Cartography: module3/scale1-5.md
       - The Openshaw Effect: module3/scale2.md
       - What about Scope?: module3/scale3.md
+  - Spatial Relationships: 
+      - Topological Foundation: module3/spatial-relationships.md
+      - Boundary Conceptualization: module3/boundaries.md
   - ACTIVITIES:
       - Week 1: activities/wk1.md
