@@ -1,6 +1,6 @@
 # __Course Information__  
 
-__A PDF version of this syllabus is available <a href="syllabus.pdf"><span style="font-size: 20px;">here</span></a>__.
+A PDF version of this syllabus is available __[here](syllabus.pdf)__.
 
 GEOG 281A is designed to help students design rigorous geographic research by connecting the development and use of core spatial methods to their theoretical foundations in geographic information science (GIScience). Readings and activities in the course are sequenced to help students enhance their spatial thinking skills and prepare to apply those skills to research problems using geographic information systems (GIS). Students explore fundamental topics including ontology and spatial representation, uncertainty, spatial modeling and inference, and validation through open science practices. 
 

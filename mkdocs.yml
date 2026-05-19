@@ -177,3 +177,7 @@ nav:
   - Spatial Relationships: 
       - Topological Foundation: module3/spatial-relationships.md
       - Boundary Conceptualization: module3/boundaries.md
+  - Uncertainty:
+      - An Uncertain World: module4/uncertainty.md
+      - Deconstructing Uncertainty: module4/deconstruction.md
+      - Uncertainty Analysis: module4/analysis.md
