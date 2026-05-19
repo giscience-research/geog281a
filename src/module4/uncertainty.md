@@ -2,6 +2,7 @@
 
 As we move toward the end of the course, we have already spent time thinking about how geographic phenomena are conceptualized, represented, interpreted, and analyzed.
 A final step in that sequence is considering how certain we are in the choice we have made, and whether any uncertainty we may have might affect our interpretations and decisions<sup><a class="sidenote-ref" href="#sn-1">1</a></sup>.
+
 How do we know whether our representations, analyses, and conclusions are trustworthy?
 Once we ask that question, we immediately have to confront __uncertainty__.
 Considering uncertainty is not so much about checking whether something is right or wrong; as it is also about understanding how confident we can be, where that confidence breaks down, and what kinds of uncertainty remain.
@@ -29,7 +30,7 @@ We will then turn to the distinctive complications of uncertainty in GIScience.
 Finally, we will shift to a structured deconstruction of types of uncertainty<sup><a class="sidenote-ref" href="#sn-2">2</a></sup> and examine how uncertainty can be identified, organized, and quantified in practice.
 
 <div class="sidenote" id="sn-2">
-<strong>2.</strong> There are many frameworks and taxonomies of uncertainty and bias. One useful aspatial framework is the [Catalogue of Bias](https://catalogofbias.org/), which outline different threats to validity within primarily causal analyses. </div>
+<strong>2.</strong> There are many frameworks and taxonomies of uncertainty and bias. One useful aspatial framework is the <a href="https://catalogofbias.org/">Catalogue of Bias</a>, which outline different threats to validity within primarily causal analyses. </div>
 
 ## __Uncertainty and Knowledge Production__
 
