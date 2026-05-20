@@ -1,0 +1,1913 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An instruction booklet for the GIScience Research class at UCSB. ">
+      
+      
+        <meta name="author" content="Emily Zhou & Peter Kedron">
+      
+      
+        <link rel="canonical" href="https://github.com/giscience-research/geog281a/module4/deconstruction/">
+      
+      
+        <link rel="prev" href="../uncertainty/">
+      
+      
+        <link rel="next" href="../analysis/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/fav.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Deconstructing Uncertainty - GIScience Research</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+3:300,300i,400,400i,700,700i%7CSource+Code+Pro:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Source Sans 3";--md-code-font:"Source Code Pro"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../styles/extra.css">
+    
+      <link rel="stylesheet" href="../../styles/tufte-notes.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    
+      <link rel="stylesheet" href="../../styles/map.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#anatomy-of-spatial-uncertainty" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="GIScience Research" class="md-header__button md-logo" aria-label="GIScience Research" data-md-component="logo">
+      
+  <img src="../../assets/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GIScience Research
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Deconstructing Uncertainty
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/giscience-research/geog281a" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    giscience-research/geog281a
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="GIScience Research" class="md-nav__button md-logo" aria-label="GIScience Research" data-md-component="logo">
+      
+  <img src="../../assets/icon.svg" alt="logo">
+
+    </a>
+    GIScience Research
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/giscience-research/geog281a" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    giscience-research/geog281a
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WELCOME
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    COURSE INFO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Re-defining GIScience
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Re-defining GIScience
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module1/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What is GIScience?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module1/debate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tool-Science Debate
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module1/giscience-geography/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GIScience and Geography
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Space, Place, & Process
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Space, Place, & Process
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module2/ontologies1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Ontologies - Space
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module2/ontologies2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Ontologies - Place
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module2/ontologies3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Ontologies - Process
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Data
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Spatial Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module2/data-models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Nature of Spatial Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module2/database-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Database Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cartographic Representation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Cartographic Representation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module3/maps1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modern Cartographic Research
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module3/maps2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Maps as Systems of Inference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scale
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Scale
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module3/scale1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concepts of Scale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module3/scale1-5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scale in GIScience and Cartography
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module3/scale2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    The Openshaw Effect
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module3/scale3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What about Scope?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spatial Relationships
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Spatial Relationships
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module3/spatial-relationships/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topological Foundation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../module3/boundaries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boundary Conceptualization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uncertainty
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Uncertainty
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uncertainty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    An Uncertain World
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deconstructing Uncertainty
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deconstructing Uncertainty
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#from-uncertainty-to-uncertainties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        From Uncertainty to Uncertainties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="From Uncertainty to Uncertainties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#well-defined-objects-and-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Well-Defined Objects and Error
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poorly-defined-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Poorly Defined Objects
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vagueness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vagueness
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ambiguity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ambiguity
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-uncertainty-enters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where Uncertainty Enters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Where Uncertainty Enters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conception" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conception
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#measurement-and-representation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Measurement and Representation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analysis-of-geographic-phenomena" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analysis of Geographic Phenomena
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#effects-of-uncertainty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Effects of Uncertainty
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Effects of Uncertainty">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uncertainty-and-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uncertainty and Visualization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uncertainty-in-spatial-patterns-and-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Uncertainty in Spatial Patterns and Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spatial-metadata-for-data-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spatial Metadata for Data Quality
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Uncertainty Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="anatomy-of-spatial-uncertainty"><strong>Anatomy of Spatial Uncertainty</strong></h1>
+<p>n the first part of the lesson, we treated uncertainty as a broad condition of geographic knowledge.
+We asked why GIScience can never fully escape uncertainty, and why uncertainty is not simply a problem of bad data or technical error.
+Now we need to slow down and ask a more operational question: <strong>what kind of uncertainty are we actually dealing with?</strong> 
+In this second part, we move from uncertainty as a general condition to <strong>uncertainties as specific forms, sources, and effects</strong></p>
+<h2 id="from-uncertainty-to-uncertainties"><strong>From Uncertainty to Uncertainties</strong></h2>
+<blockquote>
+<p>A first step is to recognize that uncertainty is not one thing. Different uncertainties have different causes and therefore require different ways of thinking about them. Treating every uncertainty as “error” can be misleading, because not all uncertainty comes from inaccurate measurement.</p>
+</blockquote>
+<p>This is the point of Fisher’s conceptual model of uncertainty in spatial data.
+The model begins with a deceptively simple question: is the geographic phenomenon we are trying to map clearly defined?
+More specifically, are both the <strong>class of objects</strong> and the <strong>individual objects</strong> clearly separable?
+For example, do we know what counts as a soil type, a forest, a neighborhood, or a flood zone?
+Also, can we clearly identify individual instances of those things on the ground? 
+Below, we provide a brief deconstruction of this model.</p>
+<div style="text-align: center;">
+  <a href="../../assets/U-Fisher.png" class="zoomable">
+    <img src="../../assets/U-Fisher.png" style="width: 50%;">
+  </a>
+</div>
+
+<p><strong>Figure 1</strong>: Fisher’s conceptual model of uncertainty in spatial data</p>
+<h3 id="well-defined-objects-and-error"><strong>Well-Defined Objects and Error</strong></h3>
+<p>In Fisher’s diagram, a <strong>well-defined geographic object</strong> is one whose class and individual instances can be clearly separated.
+Census geographies are a good example.
+Even if census boundaries are not perfect, the units themselves are formally defined, and their relationships to larger administrative units are usually explicit.
+Land ownership is another example, especially in legal systems where parcels are defined through cadastral boundaries. 
+These objects are often well defined because they are created by human institutions to organize space.
+Their uncertainty usually comes from errors in measurement, recording, implementation, or representation, rather than from confusion over what the object is.</p>
+<p>When a geographic object is well defined, uncertainty can often be treated as <strong>error</strong>.
+Error assumes that there is a true value or true condition, and that our data deviate from it in some way.
+A location may be recorded slightly away from its true position.
+An elevation value may be measured too high or too low.
+A land-cover class may be assigned incorrectly.
+In these cases, uncertainty can often be described probabilistically because the object and the target value are clear.</p>
+<div style="text-align: center;">
+  <a href="../../assets/U-ErrorType.png" class="zoomable">
+    <img src="../../assets/U-ErrorType.png" style="width: 50%;">
+  </a>
+</div>
+
+<p><strong>Figure 2</strong>: Common reasons of a database being error in GIS. </p>
+<p>There are several ways to think about probability in this context.</p>
+<ul>
+<li>One is <strong>measurement error:</strong> if we repeatedly measure the same property, the measurements may vary around a true value.</li>
+<li>Another is <strong>frequency:</strong> for example, a flood with a given return period can be described in terms of the probability of that flood level occurring.</li>
+<li>A third is <strong>expert judgment</strong>, where probability represents an informed assessment of likelihood.</li>
+</ul>
+<p>Again, these forms of probability are useful when the thing being measured is already clearly defined.
+But they are less helpful when the problem is that we are unsure what the object is or where it begins and ends.</p>
+<h3 id="poorly-defined-objects"><strong>Poorly Defined Objects</strong></h3>
+<p>A <strong>poorly defined geographic object</strong> is one whose class, boundary, or individual instances are not so easily separated.
+This is exemplified in indigenous territories, behavioral neighborhoods, soils, vegetation, and woodland types.
+These objects may be meaningful to the people or experts who use them, but they may not be marked, fixed, sharply bounded, or universally defined.</p>
+<h3 id="vagueness"><strong>Vagueness</strong></h3>
+<p>When either the class of object or the individual object is poorly defined, however, uncertainty becomes more complicated.
+The problem is no longer simply that we measured something incorrectly but that the thing itself is difficult to define or separate.
+This brings us the concept of <strong>vagueness</strong>. 
+Vagueness is different from error in that with error, the class is clear but the measurement may be wrong.
+For vagueness, the class itself has fuzzy edges.</p>
+<div class="image-row">
+  <a href="../../assets/U-urban.jpg" class="zoomable">
+    <img src="../../assets/U-urban.jpg">
+  </a>
+
+  <a href="../../assets/U-treeline.jpg" class="zoomable">
+    <img src="../../assets/U-treeline.jpg">
+  </a>
+</div>
+
+<p><strong>Figure 3</strong>: When does urban become rural? The urban-rural boundary is often treated as a line in GIS, but on the ground it may appear as a gradual transition of density, land use, infrastructure, and activity. Similarly, snow cover and tree density often change gradually with elevation, yet GIS classifications may require a single boundary such as snow/no snow or forest/non-forest.</p>
+<p>It is helpful here to refer back to the classic sorites paradox: one grain of sand is not a heap, and adding one grain at a time does not clearly create a heap, but eventually we would all agree that there is a heap.
+The problem is that there is no obvious threshold and many geographic categories work in the same way.</p>
+<p>This is also why fuzzy set theory is useful.
+Instead of forcing every location into a Boolean yes/no category, fuzzy approaches allow partial membership.
+A place can be more or less forest-like, more or less urban, more or less suitable, or more or less part of a soil class.
+Fisher notes that fuzzy membership can be identified in different ways.
+A data-driven approach might search for patterns in the data, such as through fuzzy clustering.
+An expert-driven approach might define membership through rules or formulas specified by researchers or domain experts.</p>
+<h3 id="ambiguity"><strong>Ambiguity</strong></h3>
+<p>Another possible problem for poorly-defined objects is <strong>ambiguity</strong>.
+Ambiguity occurs when there is confusion or disagreement over how categories should be defined or interpreted, often because different classification systems are being used.</p>
+<p>Fisher identifies two forms of ambiguity: <strong>discord</strong> and <strong>non-specificity</strong>.
+Discord occurs when an object is clearly defined but is assigned to different classes under different classification schemes or interpretations.
+A simple geographic example would be conflicting territorial claims, where the same piece of land is understood differently by different political actors.
+In environmental data, discord can appear when one soil classification system places a profile in one class, while another national or international classification system places it in a different class.</p>
+<p>Non-specificity occurs when assigning an object to a class at all is open to interpretation. This can happen when evidence is incomplete, categories overlap, or the classification scheme does not map neatly onto the phenomenon. For example, one agency’s definition of a flood zone, wetland, land-cover type, or soil class may not correspond directly to another agency’s definition. This does not necessarily mean one classification is wrong. It may mean that each classification was designed for a different purpose, scale, or institutional context.</p>
+<div style="text-align: center;">
+  <a href="../../assets/U-Soil.png" class="zoomable">
+    <img src="../../assets/U-Soil.png" style="width: 100%;">
+  </a>
+</div>
+
+<p><strong>Figure 4</strong>:  Drawing on Fisher&rsquo;s examples, classification depends on the scheme -  A soil profile may be assigned to different classes under different national or international classification systems. The problem is not simply error; each system may define soil categories differently</p>
+<p>The key lesson here is also that different uncertainties require different responses.</p>
+<ul>
+<li>If we are dealing with error, we may need accuracy assessment, probability models, or error propagation.</li>
+<li>If we are dealing with vagueness, we may need fuzzy boundaries or membership values.</li>
+<li>If we are dealing with ambiguity, we may need clearer definitions, metadata, ontology, or explicit comparison between classification systems.</li>
+</ul>
+<h2 id="where-uncertainty-enters"><strong>Where Uncertainty Enters</strong></h2>
+<p>Beyond understanding different kinds of uncertainty, we still need to situate them within the research process.
+In the first part of the lesson, we briefly introduced uncertainty as something staged and cumulative, now we return to that framework by Longley et al. more carefully.</p>
+<p>As a reminder:</p>
+<div class="language-text highlight"><pre><span></span><code>Conception → Measurement and Representation → Analysis
+</code></pre></div>
+<h3 id="conception"><strong>Conception</strong></h3>
+<p>The first stage is conception, where GIS users must decide what kind of phenomenon they are studying and what counts as an object, unit, boundary, or category, before they start data collection.
+There are two especially important ways that uncertainty enters at the conception stage: through the unit of analysis and through vagueness or ambiguity in defining the problem.</p>
+<p><strong>Unit of analysis:</strong> We have already encountered this issue in our lesson on scale.
+Unlike some sciences that work with relatively clear natural units, GIS often deals with phenomena whose units must be constructed.
+This means that the choice of unit of analysis is often partly subjective.
+The Openshaw example from the scale lesson makes this issue especially clear.
+In that activity, the relationship between variables changed depending on the scale and configuration of the zones.
+The data points themselves did not change, but the units used to summarize them did. The uncertainty here is not only measurement error.
+It comes from the conceptual decision to treat one zoning system as the appropriate representation of the phenomenon.</p>
+<p><strong>Vagueness and ambiguity in defining the problem:</strong> Uncertainty also enters when the phenomenon we want to study is vague or ambiguous, which is where Fisher’s typology becomes useful again.
+If we were to conduct the Openshaw analysis ourselves, these issues would appear immediately.
+We would have to decide what variables to compare, what spatial units to use, what scale of aggregation makes sense, and whether the boundaries we choose are meaningful for the process we are trying to understand.
+Are counties the right units? Are smaller zones more appropriate?
+Should zones be contiguous?
+Should they reflect administrative boundaries, functional relationships, or purely experimental groupings? Each decision shapes the analysis before the analysis technically begins.</p>
+<div style="text-align: center;">
+  <a href="../../assets/U-OS.png" class="zoomable">
+    <img src="../../assets/U-OS.png" style="width: 100%;">
+  </a>
+</div>
+
+<p><strong>Figure 5:</strong> Recall the workflow we construct together about Openshaw&rsquo;s experiment. Some uncertainty comes from standard data issues, such as the voting data, census data, and county geometries used as inputs. But other uncertainty enters through researcher decisions: how neighbors are defined, how many zones are created, whether aggregation is spatially contiguous or non-spatial, and how many iterations are run.</p>
+<h3 id="measurement-and-representation"><strong>Measurement and Representation</strong></h3>
+<p>Moving into the second stage, uncertainty arise in how we measure and represent spatial phenomenon in GIS.
+Many of these discussion connect back to earlier parts of the course, especially our discussions of fields and objects, raster and vector data, scale, classification, and cartographic generalization.
+We will revisit some of them here and connect them to uncertainty.</p>
+<p><strong>Data Models</strong>: The conceptual models we use in GIS impose different filters on reality.
+The object view treats the world as composed of discrete entities: points, lines, polygons, parcels, roads, buildings, census tracts, or administrative areas.
+This view makes many powerful GIS operations possible, but it also requires us to define the nature and extent of geographic individuals in advance.
+We have to decide where an object begins and ends, how objects nest inside larger zones, and whether their boundaries are crisp enough to be represented as lines or polygons.</p>
+<p>The field view, by contrast, treats geographic variation as continuous across space.
+Elevation, temperature, air pollution, population density, or probability surfaces are examples.
+Raster models are efficient and convenient, but their cell boundaries usually have no direct relationship to real-world features.
+The grid is imposed on the world.</p>
+<p>Neither raster nor vector representation solves uncertainty automatically.
+They simply organize it differently.
+A coastline, for example, might be represented as a crisp line, as a zone within which the true coastline may fall, or as a probability field showing the likelihood that each location is land. Each representation makes a different claim about what the coastline is and how its uncertainty should be understood.</p>
+<div class="image-row">
+  <a href="../../assets/U-coastline1.png" class="zoomable">
+    <img src="../../assets/U-coastline1.png">
+  </a>
+
+  <a href="../../assets/U-coastline2.png" class="zoomable">
+    <img src="../../assets/U-coastline2.png">
+  </a>
+</div>
+
+<p><strong>Figure 6:</strong> Illustration of the coastline example described here.</p>
+<p><strong>Statistical Models of Uncertainty</strong>: For nominal data, uncertainty often appears as misclassification.
+A parcel recorded as agriculture may actually be grassland. A land-cover class derived from aerial photography may differ from what is observed on the ground.
+A remotely sensed image may classify a pixel as forest when field observation suggests shrubland. One common way to assess this kind of uncertainty is through a confusion matrix.
+A confusion matrix compares the class recorded in the database with the class verified in the field.
+Correct classifications appear along the diagonal of the matrix, while off-diagonal entries show where one class has been confused with another.
+This allows us to see not only how much error exists, but which categories are most often mistaken for each other.</p>
+<p>For interval or ratio data, uncertainty appears as the difference between a measured value and a true value.
+Elevation, distance, temperature, income, and pollution concentration are examples. Note the difference between accuracy from precision.
+A measurement can be precise in the sense that repeated measurements are consistent, but still inaccurate if they are biased.
+Precision can also refer to the number of digits used to report a value, which can create a false sense of certainty.
+One common measure for continuous error is RMSE, or root mean square error.
+RMSE summarizes the average magnitude of errors and is often used for data such as digital elevation models.
+The chapter also introduces the Gaussian or normal distribution as a common model for measurement error.
+In a DEM, for example, an elevation value of 350 meters does not mean the true elevation is exactly 350 meters.
+It means the true value may fall within a range around that measurement, depending on the error model.</p>
+<p><strong>Positional Error</strong>: A particularly important form of measurement uncertainty in GIS is positional error. 
+For example, imagine a square whose corner coordinates are collected with GPS. GIS software may calculate the area of that square to many decimal places.
+But if the GPS coordinates themselves are uncertain, then most of those decimal places are meaningless.
+The output appears precise, but the precision is produced by the software, not by the quality of the original measurement.
+This is a recurring problem in GIS: the final result often looks more certain than the input data allow.
+A polygon area, a buffer boundary, a shortest path, or an overlay result may appear exact, but it inherits the uncertainty of the measurements used to produce it.</p>
+<h3 id="analysis-of-geographic-phenomena"><strong>Analysis of Geographic Phenomena</strong></h3>
+<p><strong>Internal and external validation</strong>: One way to assess uncertainty in analysis is through validation.
+We can think about this in two broad ways: internal validation and external validation.
+Internal validation uses the GIS workflow itself to test how sensitive results are to analytical choices.
+For example, in the Openshaw example, we might change the scale of aggregation, shift point locations within plausible error bounds, use alternative zoning systems, or simulate multiple possible versions of the input data.
+If the result remains similar across these variations, we may have more confidence in it.
+If the result changes substantially, then the analysis is sensitive to uncertainty in the workflow.
+External validation compares GIS results against other data sources or independent evidence.
+If a modeled flood-risk area corresponds with observed flood reports, insurance claims, or field observations, that gives us one kind of support.
+If a predicted hotspot corresponds with independent incident data, that can increase confidence in the result.
+However, external validation also has limits.
+The “independent” dataset may have its own uncertainty, or it may share lineage with the dataset being validated. So external validation helps assess plausibility, but it does not produce perfect certainty.</p>
+<table>
+<thead>
+<tr>
+<th>Type of validation</th>
+<th>Main question</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Internal validation</td>
+<td>Does the result change if we alter choices within the workflow?</td>
+<td>Openshaw: change scale, zoning, grouping, number of zones, or iterations</td>
+</tr>
+<tr>
+<td>Reproducibility check</td>
+<td>Can we regenerate the same result from the same data and code?</td>
+<td>Rerun the same GIS analysis with the same workflow</td>
+</tr>
+<tr>
+<td>Robustness check</td>
+<td>Does the conclusion hold across reasonable alternative workflows?</td>
+<td>Try different neighborhood definitions, model specifications, or aggregation units</td>
+</tr>
+<tr>
+<td>External validation*</td>
+<td>Does the result agree with independent evidence?</td>
+<td>Compare flood-risk maps with observed flood reports, or predicted hotspots with later incident data</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ecological Fallacy and MAUP</strong>: A second analytical problem is the ecological fallacy.
+This occurs when we use aggregate data to make claims about individuals.
+For example, if we find that census tracts with higher unemployment also have higher rates of a particular demographic group, we cannot automatically conclude that individuals in that demographic group are more likely to be unemployed.
+The ecological fallacy is therefore a problem of interpretation.
+The data may be correctly measured at the aggregate level, and the map may be technically accurate, but the inference drawn from it may still be wrong.
+This is another way uncertainty enters analysis. Closely related to the ecological fallacy is the modifiable areal unit problem.
+This connects directly back to the Openshaw activity from the scale lesson.
+The underlying county-level data did not change, but the correlation between variables changed as the data were aggregated into different zoning systems and scales, which demonstrate that spatial analysis is also about the geography through which those variables are summarized.</p>
+<p>Griffith and colleagues extend this point to neighborhood analysis.
+Many studies treat census tracts or block groups as neighborhoods, assigning everyone within the same areal unit to the same social and physical environment.
+But people living in the same tract may experience very different neighborhoods depending on their exact location, mobility, social networks, and daily activity spaces.
+This creates neighborhood assignment error: the spatial unit used in the analysis may not match the lived geography of the process being studied.</p>
+<p><strong>Overlaying and Integrating Data from Different Sources</strong>: A final analytical issue is the uncertainty created when GIS integrates data from multiple sources.
+GIS is powerful precisely because it allows us to overlay different layers, but each layer may have a different lineage, scale, classification system, positional accuracy, date of collection, and intended use.
+When these layers are overlaid, their uncertainties interact.This is why data integration requires attention to lineage and fitness for use. 
+here did each dataset come from? At what scale was it created? What was it designed to represent?
+How current is it? What categories does it use? Does it share a source with another layer? Are positional errors likely to align or conflict?</p>
+<div style="text-align: center;">
+  <a href="../../assets/U-vt.png" class="zoomable">
+    <img src="../../assets/U-vt.png" style="width: 100%;">
+  </a>
+</div>
+
+<p><strong>Figure 7</strong>: Again, this point also connects to the Vermont flood-risk example. FEMA flood zones and Vermont River Corridor data do not simply provide two versions of the same boundary. They represent different conceptions of flood risk: inundation risk in one case, river corridor processes such as erosion and channel movement in the other. Similarly, ACS mobile-home data and E911 point data represent mobile home locations in different ways and at different levels of precision. When these datasets are combined, the result depends on how those different definitions, scales, and measurement histories are reconciled. Here is a clearer visualization of the problem with different river corridor datasets. </p>
+<h2 id="effects-of-uncertainty"><strong>Effects of Uncertainty</strong></h2>
+<p>A natural next step here is to ask what uncertainty does once it enters our analytical workflow.
+Why does it matter? What kinds of problems does it create for maps, spatial patterns, models, aggregation, and decision-making?</p>
+<h3 id="uncertainty-and-visualization"><strong>Uncertainty and Visualization</strong></h3>
+<p>One major issue is that uncertainty is difficult to visualize.
+Maps are very good at showing spatial patterns, but they are often much less effective at showing how reliable those patterns are.
+This is why uncertainty visualization has been a major GIScience research topic since the late 1980s, especially through research on spatial data quality and the visualization of spatial information quality.</p>
+<p>Many methods have been proposed for mapping uncertainty, but relatively few have become standard practice in common GIS software.
+This gap matters because map readers often look for differences across places: high and low values, clusters, boundaries, gradients, and outliers.
+But if the underlying estimates have large errors, apparent differences on the map may not be statistically meaningful.</p>
+<p>For example, the Atlas of United States Mortality attempted to help readers interpret geographic variation by including error bars.
+Later work on American Community Survey data explored ways to incorporate margins of error into choropleth maps, including bivariate legends that show both the estimate and its reliability.
+The goal is not only to map where values are high or low, but to help readers ask whether those differences are reliable enough to support interpretation.</p>
+<h3 id="uncertainty-in-spatial-patterns-and-models"><strong>Uncertainty in Spatial Patterns and Models</strong></h3>
+<p>Uncertainty also affects spatial pattern detection and spatial modeling.
+Spatial analysts often use tools such as spatial autocorrelation, hot spot detection, cold spot detection, clustering, and regression models to identify and explain spatial patterns.
+But many of these methods assume that the observed data are accurate enough to analyze directly.</p>
+<p>That assumption is not always safe.
+Sampling error, measurement error, locational error, and model specification error can all affect the values we map and model.
+If those errors are substantial, then they should be reflected in confidence intervals, cluster detection, spatial statistics, and model evaluation.
+Otherwise, we may treat uncertain patterns as if they were more stable or meaningful than they really are. The same issue applies to spatial models.</p>
+<h3 id="spatial-metadata-for-data-quality"><strong>Spatial Metadata for Data Quality</strong></h3>
+<p>Finally, uncertainty needs to be documented.
+If uncertainty affects maps, patterns, models, and decisions, then spatial databases should include information about data quality, not just data values.</p>
+<p>This is the idea of spatial metadata: metadata that describe the quality of each attribute for each geographic feature.
+Some datasets already do this in limited ways. For example, American Community Survey data include margins of error for estimates, which helps users assess sampling uncertainty.
+But many datasets still document only certain kinds of uncertainty, while leaving others unclear.
+Sampling error may be reported, but aggregation error, locational error, classification uncertainty, lineage, or model uncertainty may be much harder to find.</p>
+<hr />
+<p>References:</p>
+<p><em>Longley, P. A., M. F. Goodchild, D. J. Maguire, and D. W. Rhind. 2008. Geographical information systems and science 2<sup>nd</sup> ed. Chichester: Wiley. (only chapter 6: Uncertainty, pages 127-153)</em></p>
+<p><em>Griffith, D. A., Wong, D. W., &amp; Chun, Y. (2015). Uncertainty-related research issues in spatial analysis. In W. Shi, B. Wu, &amp; A. Stein (Eds.), Uncertainty modelling and quality control for spatial data (pp. 3–11).</em></p>
+<p><em>Fisher, P. F. (2005). Models of uncertainty in spatial data. In P. A. Longley, M. F. Goodchild, D. J. Maguire, &amp; D. W. Rhind (Eds.), Geographical information systems: Principles, techniques, management and applications (Abridged ed., pp. 191–205). Wiley.</em></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../uncertainty/" class="md-footer__link md-footer__link--prev" aria-label="Previous: An Uncertain World">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                An Uncertain World
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../analysis/" class="md-footer__link md-footer__link--next" aria-label="Next: Uncertainty Analysis">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Uncertainty Analysis
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Peter Kedron & Emily Zhou
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/giscience-research/geog281a" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant:false", "navigation.instant.progress", "navigation.indexes", "navigation.footer", "content.code.copy", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+      
+        <script src="../../javascripts/lightbox-init.js"></script>
+      
+        <script src="../../javascripts/embed-refresh.js"></script>
+      
+        <script src="../../javascripts/zoom.js"></script>
+      
+    
+  </body>
+</html>
